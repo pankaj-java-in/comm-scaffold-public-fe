@@ -107,3 +107,71 @@ $scrollBarHeight: 1px;
         }
     }
 }
+
+// HelpingIndustries
+
+.main-help{
+  display: flex;
+  flex-flow: column;
+  padding:35px 0 95px 0;
+  .help{
+    padding: 50px 240px 20px 67px;
+    .help-head{
+      height: 45px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 50px;
+      color: #000000;
+    }
+    .help-content{
+      padding-top: 20px;
+      height: 42px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+    }
+  }
+  .box-square{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 35px 67px 0 67px;
+    .single-box{
+      width: 286.7px;
+      height: 282px;
+      border-top: 1px solid #000000;
+      margin-right: 13px;
+      .box-square-head{
+        height: 22px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: left;
+        color: #000000;
+        padding: 20px 0 20px 0;
+      }
+      .box-square-content{
+          height: 60px;
+          width: 215px;
+          font-family: 'Manrope';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          color: #000000;
+          text-align: left;
+      }
+      .box-square-img{
+        width: 193.7px;
+        height: 190px;
+      }
+    }
+  }
+}
