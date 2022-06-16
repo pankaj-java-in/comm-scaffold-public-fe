@@ -38,7 +38,6 @@ function Faq({
     </dl>
   );
 }
-
 function Question({ children, isOpen, answerId, onToggle }) {
   return (
     <dt>
