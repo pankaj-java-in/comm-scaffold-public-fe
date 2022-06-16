@@ -1,5 +1,9 @@
 import React from "react";
 import "./Body.scss";
+import chatImage from "../../Utlis/Icons/image 64.svg";
+import breakOut from "../../Utlis/Icons/image 70.svg";
+import dynamic from "../../Utlis/Icons/image 71.svg";
+import recording from "../../Utlis/Icons/image 72.svg";
 
 const Features = () => {
   return (
@@ -18,11 +22,11 @@ const Features = () => {
             <div className="box" style={{marginTop:"310px"}}>
               <div className="items">
                 <div className="icon">
-                  <img src="../../../public/Icons/image 64.svg" alt="chatIcon"/>
+                  <img src={chatImage} alt="chatIcon"/>
                 </div>
                 <div className="item-head">
                 Private/Public Chat
-                </div>
+                </div> 
                 <div className="item-content">
                 Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.
                 </div>
@@ -31,81 +35,42 @@ const Features = () => {
             <div className="box">
             <div className="items">
                 <div className="icon">
-                  C
+                  <img src={breakOut} alt="breakout"/>
                 </div>
                 <div className="item-head">
-                  Computer
+                Breakout Rooms
                 </div>
                 <div className="item-content">
-                  Computer is a good language to use
+                Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.
                 </div>
               </div>
               </div>
               <div className="box">
             <div className="items">
                 <div className="icon">
-                  C
+                  <img src={dynamic} alt='dyanmic'/>
                 </div>
                 <div className="item-head">
-                  Computer
+                   Dynamic Role Change
                 </div>
                 <div className="item-content">
-                  Computer is a good language to use
+                Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.
                 </div>
               </div>
               </div>
-              <div className="box">
+              <div className="box" style={{marginBottom:"-200px"}}>
             <div className="items">
                 <div className="icon">
-                  C
+                  <img src={recording} alt="recording"/>
                 </div>
-                <div className="item-head">
-                  Computer
-                </div>
-                <div className="item-content">
-                  Computer is a good language to use
-                </div>
-              </div>
-              </div>
-              <div className="box">
-            <div className="items">
-                <div className="icon">
-                  C
-                </div>
-                <div className="item-head">
-                  Computer
+                <div className="item-head" style={{fontSize:"19px"}}>
+                Recording with Custom Layout
                 </div>
                 <div className="item-content">
-                  Computer is a good language to use
+                Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.
                 </div>
               </div>
               </div>
-              <div className="box">
-            <div className="items">
-                <div className="icon">
-                  C
-                </div>
-                <div className="item-head">
-                  Computer
-                </div>
-                <div className="item-content">
-                  Computer is a good language to use
-                </div>
-              </div>
-              </div>
-            <div className="box" style={{marginBottom:"-200px"}}>
-            <div className="items">
-                <div className="icon">
-                  C
-                </div>
-                <div className="item-head">
-                  Computer
-                </div>
-                <div className="item-content">
-                  Computer is a good language to use
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
