@@ -226,6 +226,7 @@ $scrollBarHeight: 1px;
       flex-flow: column;
       justify-content: center;
       align-items: center;
+      padding: 0 40px 0 40px;
       .imp-box-circle{
         display: flex;
         flex-flow: column;
@@ -260,8 +261,8 @@ $scrollBarHeight: 1px;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 46px;
+        font-size: 22px;
+        line-height: 35px;
         color: #000000;
         padding: 25px 0 10px 0;
       }
@@ -278,8 +279,7 @@ $scrollBarHeight: 1px;
     }
   }
   .imp-img{
-    width: 65px;
-    height: 22px;
-    padding-top: 100px;
+    width: 50px;
+    padding-top: 45px;
   }
 }
