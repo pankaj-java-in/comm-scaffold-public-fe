@@ -213,6 +213,11 @@ $scrollBarHeight: 1px;
     flex-flow: row;
     justify-content: space-around;
     padding: 0 50px 0 50px;
+    @media (max-width: 800px) {
+      .imp-box {
+        flex-flow: column;
+      }
+    }
     .imp-box-single{
       display: flex;
       flex-flow: column;
