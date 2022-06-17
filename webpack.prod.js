@@ -2,8 +2,16 @@ const { merge } = require('webpack-merge');
 const common = require('./webpack.config.js');
 const path = require('path');
 
+
 module.exports = env => {
-  let baseUrl = 'https://stage.communication-scaffold.oodleslab.com/public';
+  let baseUrl = 'https://stage.communication-scaffold.oodleslab.com/';
+  // if (env.dev){
+  //   baseUrl = 'https://ms.oodleslab.com/chat/';
+  // }else if (env.stage){
+  //   baseUrl = 'https://stage.oodleslab.com/chat/';
+  // }else if (env.prod){
+  //   baseUrl = 'https://my.oodles.io/chat/';
+  // }
 
   return merge(common, {
     mode: 'production',
@@ -11,7 +19,7 @@ module.exports = env => {
     module: {
       rules: [
         {
-          test: /\.png|woff|woff2|eot|ttf|svg|jpg|gif$/,
+          test: /\.png|woff|woff2|eot|ttf|svg|jpg|gif|ico$/,
           loader: 'file-loader',
           options: {
             outputPath: 'scaffold-app/images',
@@ -34,3 +42,39 @@ module.exports = env => {
     }
   })
 };
+// const { merge } = require('webpack-merge');
+// const common = require('./webpack.config.js');
+// const path = require('path');
+
+// module.exports = env => {
+//   let baseUrl = 'https://stage.communication-scaffold.oodleslab.com/public';
+
+//   return merge(common, {
+//     mode: 'production',
+//     entry: ['babel-polyfill', path.resolve(__dirname, './src/main.js')],
+//     module: {
+//       rules: [
+//         {
+//           test: /\.png|woff|woff2|eot|ttf|svg|jpg|gif$/,
+//           loader: 'file-loader',
+//           options: {
+//             outputPath: 'scaffold-app/images',
+//             publicPath: baseUrl + 'scaffold-app/images',
+//           },
+//         }
+//       ]
+//     },
+//     output: {
+//       path: path.resolve(__dirname, './dist'),
+//       filename: 'scaffold-app/js/main.js',
+//       publicPath: "/",
+//       clean: true
+//     },
+//     stats: {
+//       logging: true,
+//       errors: true,
+//       errorDetails: true,
+//       timings: true
+//     }
+//   })
+// };
