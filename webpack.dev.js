@@ -14,8 +14,8 @@ module.exports = merge(common, {
         test: /\.png|woff|woff2|eot|ttf|svg|jpg|gif$/,
         loader: 'file-loader',
         options: {
-          outputPath: 'chat-app/images',
-          publicPath: 'chat-app/images'
+          outputPath: 'scaffold-app/images',
+          publicPath: 'scaffold-app/images'
         },
       }
     ]
@@ -24,16 +24,16 @@ module.exports = merge(common, {
     contentBase: path.resolve(__dirname, './public'),
     historyApiFallback: true,
     hot: true,
-    port: 5500,
+    port: 3000,
     proxy: {
       '/chat-api/*': {
-        target: 'https://stage.communication-scaffold.oodleslab.com/Public',
+        target: 'https://stage.communication-scaffold.oodleslab.com/',
         secure: false,
         changeOrigin: true,
         ws: true
       },
       '/dev-chat-api/*': {
-        target: 'https://dev.communication-scaffold.oodleslab.com/Public',
+        target: 'https://dev.communication-scaffold.oodleslab.com/',
         secure: false,
         changeOrigin: true,
         ws: true
@@ -42,7 +42,7 @@ module.exports = merge(common, {
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'chat-app/js/main.js',
+    filename: 'scaffold-app/js/main.js',
     publicPath: '/',
     clean: true
   }
