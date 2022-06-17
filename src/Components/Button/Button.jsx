@@ -8,7 +8,7 @@ const Button = () => {
             Request a Demo 
             </div>
             <div className='arrow'>
-                ->
+                -
             </div>
         </div>
     )
