@@ -25,19 +25,21 @@
     background: #F1F5F8;
     .content{
       width: 50%;
-      padding:35px 30px 0 0;
+      padding:30px 30px 0 0;
       .question{
-        height: 109px;
+        height: 85px;
+        width: 330px;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 800;
-        font-size: 54px;
-        line-height: 64px;
+        font-size: 45px;
+        line-height: 48px;
         color: #000000;
       }
       .answer{
         padding-top: 35px;
         height: 74px;
+        width: 450px;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
