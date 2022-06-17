@@ -5,7 +5,7 @@ const path = require('path');
 
 module.exports = merge(common, {
   mode: 'development',
-  entry: ['babel-polyfill', path.resolve(__dirname, './src/main.js')],
+  entry: ['babel-polyfill', path.resolve(__dirname, './src/index.js')],
   // devtool: 'inline-source-map',
   plugins: [new webpack.HotModuleReplacementPlugin()],
   module: {
