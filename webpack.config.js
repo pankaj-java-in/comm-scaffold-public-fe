@@ -22,9 +22,6 @@ module.exports = {
       },
     ],
   },
-  externals: {
-    'react': 'React'
-},
   plugins: [
     new Dotenv(),
     new webpack.ProvidePlugin({
@@ -38,6 +35,9 @@ module.exports = {
     new webpack.ProvidePlugin({
       process: "process/browser",
     }),
+    new webpack.ProvidePlugin({
+         "React": "react",
+      }),
   ],
   resolve: {
     extensions: ["*", ".js", ".jsx"],
