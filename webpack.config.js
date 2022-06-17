@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Communication Scaffold: Quality Video Collaboration Solution",
-      favicon: "public/favicon.ico",
+      favicon: "./public/favicon.ico",
       template: "./public/index.html",
     }),
     new webpack.ProvidePlugin({
