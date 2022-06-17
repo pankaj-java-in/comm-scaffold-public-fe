@@ -140,9 +140,9 @@ $scrollBarHeight: 1px;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    padding: 35px 67px 0 67px;
+    padding: 35px 67px 40px 48px;
     .single-box{
-      width: 286.7px;
+      width: 250px;
       height: 282px;
       border-top: 1px solid #000000;
       margin-right: 13px;
@@ -159,7 +159,7 @@ $scrollBarHeight: 1px;
       }
       .box-square-content{
           height: 60px;
-          width: 215px;
+          width: 245px;
           font-family: 'Manrope';
           font-style: normal;
           font-weight: 400;
@@ -169,9 +169,109 @@ $scrollBarHeight: 1px;
           text-align: left;
       }
       .box-square-img{
-        width: 193.7px;
-        height: 190px;
+        width: 241px;
+        padding-top: 30px;
       }
     }
+  }
+}
+// Implementation
+
+.main-imp{
+  display: flex;
+  flex-flow: column;
+  padding: 45px 35px 45px 35px;
+  background: #F1F5F8;
+  .imp{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 246px 0 246px;
+    .imp-head{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 35px;
+      line-height: 45px;
+      text-align: center;
+      color: #000000;
+    }
+    .imp-content{
+      padding-top: 10px;
+      text-align: center;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      color: #000000;
+    }
+  }
+  .imp-box{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 0 50px 0 50px;
+    .imp-box-single{
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      .imp-box-circle{
+        display: flex;
+        flex-flow: column;
+        justify-items: center;
+        align-items: center;
+        .big-circle{
+        height: 138.5px;
+        width: 138.5px;
+        background: #C4C4C4;
+        border-radius: 50%;
+        }
+        .small-circle{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-top: -26px;
+        background: #E1593E;
+        border: 2px solid #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25px;
+        }
+      }
+      .imp-box-head{
+        text-align: center;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 46px;
+        color: #000000;
+        padding: 25px 0 10px 0;
+      }
+      .imp-box-content{
+        width: 300px;
+        text-align: center;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+      }
+    }
+  }
+  .imp-img{
+    width: 65px;
+    height: 22px;
+    padding-top: 100px;
   }
 }
