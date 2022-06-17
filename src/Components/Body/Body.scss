@@ -18,6 +18,9 @@ $scrollBarHeight: 1px;
     .features{
         display: flex;
         flex-flow: column;
+        @media (max-width: 800px) {
+          flex-flow: column;
+      }
         .content{
             display: flex;
             flex-flow: column;
@@ -48,8 +51,7 @@ $scrollBarHeight: 1px;
             padding: 35px 0 0 0;
             .horizontal-scroll-wrapper {
                 width: 300px;
-                max-height: 95vw;
-                margin-left: 5px;
+                max-height: 98vw;
                 overflow-y: auto;
                 overflow-x: hidden;
                 transform: rotate(-90deg) translateY(-$finalHeight);
@@ -141,6 +143,9 @@ $scrollBarHeight: 1px;
     flex-flow: row;
     justify-content: space-around;
     padding: 35px 67px 40px 48px;
+    @media (max-width: 800px) {
+      flex-flow: column;
+  }
     .single-box{
       width: 250px;
       height: 282px;
@@ -212,11 +217,9 @@ $scrollBarHeight: 1px;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    padding: 0 50px 0 50px;
+    padding: 45px 50px 45px 50px;
     @media (max-width: 800px) {
-      .imp-box {
         flex-flow: column;
-      }
     }
     .imp-box-single{
       display: flex;

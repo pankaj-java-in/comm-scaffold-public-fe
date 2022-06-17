@@ -27,13 +27,13 @@ module.exports = merge(common, {
     port: 5500,
     proxy: {
       '/chat-api/*': {
-        target: 'https://stage.communication-scaffold.oodleslab.com',
+        target: 'https://stage.communication-scaffold.oodleslab.com/Public',
         secure: false,
         changeOrigin: true,
         ws: true
       },
       '/dev-chat-api/*': {
-        target: 'https://dev.communication-scaffold.oodleslab.com',
+        target: 'https://dev.communication-scaffold.oodleslab.com/Public',
         secure: false,
         changeOrigin: true,
         ws: true
