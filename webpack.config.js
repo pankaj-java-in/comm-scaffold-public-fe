@@ -1,4 +1,3 @@
-import React from 'react';
 const path = require("path");
 var webpack = require("webpack");
 const Dotenv = require('dotenv-webpack');
