@@ -4,7 +4,7 @@ const path = require('path');
 
 
 module.exports = env => {
-  let baseUrl = 'https://stage.communication-scaffold.oodleslab.com/';
+  let baseUrl = 'https://stage.communication-scaffold.oodleslab.com/public';
   // if (env.dev){
   //   baseUrl = 'https://ms.oodleslab.com/chat/';
   // }else if (env.stage){
