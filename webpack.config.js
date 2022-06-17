@@ -21,10 +21,10 @@ module.exports = {
         use: ["file-loader"],
       },
     ],
-    externals: {
-      'react': 'React'
   },
-  },
+  externals: {
+    'react': 'React'
+},
   plugins: [
     new Dotenv(),
     new webpack.ProvidePlugin({
