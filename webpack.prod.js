@@ -14,7 +14,7 @@ module.exports = env => {
 
   return merge(common, {
     mode: 'production',
-    entry: ['babel-polyfill', path.resolve(__dirname, './src/index.js')],
+    entry: ['babel-polyfill', path.resolve(__dirname, 'src/index.js')],
     module: {
       rules: [
         {
