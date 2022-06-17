@@ -1,3 +1,4 @@
+import React from 'react';
 const path = require("path");
 var webpack = require("webpack");
 const Dotenv = require('dotenv-webpack');
@@ -21,6 +22,9 @@ module.exports = {
         use: ["file-loader"],
       },
     ],
+    externals: {
+      'react': 'React'
+  },
   },
   plugins: [
     new Dotenv(),
