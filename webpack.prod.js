@@ -5,11 +5,11 @@ const path = require('path');
 module.exports = env => {
   let baseUrl = '';
   if (env.dev){
-    baseUrl = 'https://dev.communication-scaffold.oodleslab.com/';
+    baseUrl = 'https://dev.communication-scaffold.oodleslab.com/Public';
   }else if (env.stage){
-    baseUrl = 'https://stage.communication-scaffold.oodleslab.com/';
+    baseUrl = 'https://stage.communication-scaffold.oodleslab.com/Public';
   }else if (env.prod){
-    baseUrl = 'https://communication-scaffold.oodles.io/';
+    baseUrl = 'https://communication-scaffold.oodles.io/Public';
   }
 
   return merge(common, {
