@@ -126,9 +126,9 @@ $scrollBarHeight: 1px;
   flex-flow: column;
   padding:0 0 95px 0;
   .help{
-    padding: 120px 540px 20px 59px;
+    padding: 80px 360px 20px 59px;
     @media (max-width: 800px) {
-      padding: 120px 40px 20px 40px;
+      padding: 80px 40px 20px 40px;
   }
     .help-head{
       font-family: 'Manrope';
@@ -137,10 +137,6 @@ $scrollBarHeight: 1px;
       font-size: 40px;
       line-height: 50px;
       color: #000000;
-      padding-right: 295px;
-      @media (max-width: 800px) {
-        padding-right: 0;
-    }
     }
     .help-content{
       padding: 20px 180px 0 0;
@@ -375,6 +371,7 @@ padding: 0 20px 25px 20px;
 .main-security{
   display: flex;
   flex-flow: row;
+  padding-bottom: 60px;
   @media (max-width: 800px) {
     flex-flow: column;
 }
@@ -474,5 +471,102 @@ padding: 0 20px 25px 20px;
     @media (max-width: 800px) {
       flex-flow: column;
   }
+  }
+}
+
+// feat
+
+.feat-box{
+  display: flex;
+  flex-flow: row;
+  .box-ss{
+    height: 200px;
+    width: 300px;
+    border: 2px solid;
+  }
+}
+
+// Industry
+
+.main-industry{
+  height: 263px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Frame+69+(1).svg"), #011054;
+  .ind-head{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 320px 0 320px;
+    @media (max-width: 800px) {
+      padding: 0;
+  }
+  }
+  .ind-content{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;  
+    padding: 10px 253px 10px 253px;  
+    @media (max-width: 800px) {
+      padding: 0;
+  }
+  }
+  .ind-button{
+    padding-top: 15px;
+  }
+}
+
+// Demo
+
+.main-demo{
+  background: url("https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/fc1c06ed-3dec-4079-b879-592a3747becc_Frame 81 (1).png"),  #010F54;
+  padding: 60px 0 60px 60px;
+  .demo-box{
+    width: 500px;
+    display: flex;
+    flex-flow: column;
+    background: url("https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/59c1708d-a02e-496f-b6a3-0368d7c40c56_Mask group (3).png"),#1344A5;
+    border-radius: 15px;
+    padding: 44px 39px 50px 55px;
+    .demo-head{
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #DEE1E6;
+    }
+    .demo-content{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      padding: 10px 0 10px 0;
+    }
+    .demo-input{
+      padding: 10px 0 10px 0;
+      background: #FAFAFA;
+      border: 1px solid #E0E0E0;
+      border-radius: 4px;
+      margin-top: 10px;
+      width: 385px;
+    }
+    .demo-button{
+      padding-top: 20px;
+    }
   }
 }

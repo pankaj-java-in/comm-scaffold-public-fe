@@ -1,15 +1,23 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Body.scss";
 import chatImage from "../../Utlis/Icons/image 64.svg";
 import breakOut from "../../Utlis/Icons/image 70.svg";
 import dynamic from "../../Utlis/Icons/image 71.svg";
 import recording from "../../Utlis/Icons/image 72.svg";
+import AOS from "aos";
 
 const Features = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
     <div className="main-features">
       <div className="features">
-        <div className="content">
+        <div className="content" data-aos="fade-down">
           <div className="head">Features</div>
           <div className="about">
             Yet bed any for travelling assistance indulgence unpleasing. Not
@@ -17,7 +25,7 @@ const Features = () => {
             alteration boisterous the attachment.
           </div>
         </div>
-        <div className="rotation">
+        <div className="rotation" data-aos="fade-right">
           <div className="horizontal-scroll-wrapper squares">
             <div className="box" style={{marginTop:"310px"}}>
               <div className="items">

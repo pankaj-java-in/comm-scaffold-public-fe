@@ -9,6 +9,9 @@ import Implementation from "../Body/Implementation";
 import Advantage from "../Body/Advantange";
 import Security from "../Body/Security";
 import Benefits from "../Body/Benefits";
+// import { Feature } from "../Body/Feature";
+import Industry from "../Body/Industry";
+import RequestDemo from "../Body/RequestDemo";
 
 const Layout = () => {
   return (
@@ -18,8 +21,10 @@ const Layout = () => {
         <Features/>
         <Implementation/>
         <Security/>
+        <Industry/>
         <HelpingIndustries/>
         <ShowFaq/>
+        <RequestDemo/>
         <Advantage/>
         <Footer/>
     </div>

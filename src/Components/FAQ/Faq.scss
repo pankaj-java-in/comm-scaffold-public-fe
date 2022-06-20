@@ -20,7 +20,8 @@
   .main-faq{
     display: flex;
     flex-flow: row;
-    height: 498px;
+    min-height: 380px;
+    height: auto;
     padding: 110px 106px 10px 74px;
     background: #F1F5F8;
     @media (max-width: 800px) {
