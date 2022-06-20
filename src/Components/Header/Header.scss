@@ -2,6 +2,11 @@
     padding: 26px 51px 26px 51px;
     box-shadow: 0px -1px 14px rgba(0, 0, 0, 0.15);
     background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1111;
     .header{
         display: flex;
         justify-content: space-between;
