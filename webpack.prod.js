@@ -3,33 +3,33 @@ const common = require('./webpack.config.js');
 const path = require('path');
 
 module.exports = env => {
-  let baseUrl = '';
-  if (env.dev){
-    baseUrl = 'https://dev.communication-scaffold.oodleslab.com/Public';
-  }else if (env.stage){
-    baseUrl = 'https://stage.communication-scaffold.oodleslab.com/Public';
-  }else if (env.prod){
-    baseUrl = 'https://communication-scaffold.oodles.io/Public';
-  }
+  let baseUrl = 'https://stage.communication-scaffold.oodleslab.com/public';
+  // if (env.dev){
+  //   baseUrl = 'https://ms.oodleslab.com/chat/';
+  // }else if (env.stage){
+  //   baseUrl = 'https://stage.oodleslab.com/chat/';
+  // }else if (env.prod){
+  //   baseUrl = 'https://my.oodles.io/chat/';
+  // }
 
   return merge(common, {
     mode: 'production',
-    entry: ['babel-polyfill', path.resolve(__dirname, './src/index.js')],
+    entry: ['babel-polyfill', path.resolve(__dirname, 'src/index.js')],
     module: {
       rules: [
         {
-          test: /\.png|woff|woff2|eot|ttf|svg|jpg|gif$/,
+          test: /\.png|woff|woff2|eot|ttf|svg|jpg|gif|ico$/,
           loader: 'file-loader',
           options: {
-            outputPath: 'chat-app/images',
-            publicPath: baseUrl + 'chat-app/images',
+            outputPath: 'scaffold-app/images',
+            publicPath: baseUrl + 'scaffold-app/images',
           },
         }
       ]
     },
     output: {
       path: path.resolve(__dirname, './dist'),
-      filename: 'chat-app/js/main.js',
+      filename: 'scaffold-app/js/main.js',
       publicPath: "/",
       clean: true
     },

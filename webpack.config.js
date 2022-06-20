@@ -1,7 +1,7 @@
 const path = require("path");
 var webpack = require("webpack");
+const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
 
 module.exports = {
   module: {
@@ -23,18 +23,21 @@ module.exports = {
     ],
   },
   plugins: [
+    new Dotenv(),
+    new webpack.ProvidePlugin({
+      Buffer: ["buffer", "Buffer"],
+    }),
     new HtmlWebpackPlugin({
-      title: "Communication Scaffold: Quality Video Collaboration Solution",
-      favicon: "public/favicon.ico",
+      title: "Scaffold Public",
+      // favicon: "./public/Favicon.ico",
       template: "./public/index.html",
     }),
     new webpack.ProvidePlugin({
       process: "process/browser",
     }),
-    new webpack.IgnorePlugin({ resourceRegExp:/vertx/, contextRegExp:/ajv/ }),
-    new NodePolyfillPlugin({
-			excludeAliases: ["console"]
-		})
+    new webpack.ProvidePlugin({
+         "React": "react",
+      }),
   ],
   resolve: {
     extensions: ["*", ".js", ".jsx"],
