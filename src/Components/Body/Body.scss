@@ -14,7 +14,7 @@ $scrollBarHeight: 1px;
 .main-features{
     background: linear-gradient(180deg, #011054 0%, #1344A4 100%);
     height: 24rem;
-    padding: 130px 0 20px 0;
+    padding: 45px 0 20px 0;
     @media (max-width: 800px) {
       padding: 150px 0 30px 0;
   }
@@ -124,42 +124,53 @@ $scrollBarHeight: 1px;
 .main-help{
   display: flex;
   flex-flow: column;
-  padding:35px 0 95px 0;
+  padding:0 0 95px 0;
   .help{
-    padding: 50px 240px 20px 67px;
+    padding: 120px 540px 20px 59px;
+    @media (max-width: 800px) {
+      padding: 120px 40px 20px 40px;
+  }
     .help-head{
-      height: 45px;
       font-family: 'Manrope';
       font-style: normal;
       font-weight: 800;
       font-size: 40px;
       line-height: 50px;
       color: #000000;
+      padding-right: 295px;
+      @media (max-width: 800px) {
+        padding-right: 0;
+    }
     }
     .help-content{
-      padding-top: 20px;
-      height: 42px;
+      padding: 20px 180px 0 0;
       font-family: 'Manrope';
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       line-height: 24px;
       color: #000000;
+      @media (max-width: 800px) {
+        padding: 20px 0 0 0;
+    }
     }
   }
   .box-square{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    padding: 35px 67px 40px 48px;
+    padding: 30px 48px 40px 48px;
     @media (max-width: 800px) {
       flex-flow: column;
+      padding: 0px 48px 40px 48px;
   }
     .single-box{
       width: 250px;
-      height: 282px;
       border-top: 1px solid #000000;
       margin-right: 13px;
+      @media (max-width: 800px) {
+        margin-top: 13px;
+    }
       .box-square-head{
         height: 22px;
         font-family: 'Manrope';
@@ -297,6 +308,171 @@ $scrollBarHeight: 1px;
     padding-top: 45px;
     @media (max-width: 800px) {
       padding-bottom: 45px;
+  }
+  }
+}
+
+// Advantages
+
+.main-adv{
+  padding: 75px 30px 75px 30px;
+  .adv{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding-top: 45px;
+    @media (max-width: 800px) {
+      flex-flow: column;
+  }
+  }
+}
+
+// Template
+
+.main-temp{
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-flow: column;
+  .temp-head{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    padding: 12px 0 12px 0;
+  }
+  .temp-content{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #000000;
+    // width: 270px;
+  }
+  .temp-img{
+    padding: 17px 10px 10px 17px;
+  }
+}
+.benefit-temp{
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 54px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 0px;
+  width: 260px;
+}
+.benefit-cont{
+text-align: center;
+// width: 220px!important;
+padding: 0 20px 25px 20px;
+}
+
+// Security
+
+.main-security{
+  display: flex;
+  flex-flow: row;
+  @media (max-width: 800px) {
+    flex-flow: column;
+}
+  .security{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    padding: 30px 0 0 59px;
+    @media (max-width: 800px) {
+      width: 90%;
+      padding: 30px 20px 0 20px;
+  }
+    .sec-head{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 51px;
+      color: #000000;
+      padding: 40px 40px 0 0;
+      @media (max-width: 800px) {
+        padding: 0;
+    }
+    }
+    .sec-content{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+      padding: 25px 75px 25px 0;
+      @media (max-width: 800px) {
+        padding: 25px 0 25px 0;
+    }
+    }
+    .sec-button{
+      display: flex;
+      flex-flow: row;
+      .btn{
+        padding: 49px 50px 0 0;
+      }
+      .vec{
+        @media (max-width: 800px) {
+          display: none;
+      }
+      }
+    }
+  }
+  .security-img{
+    padding: 30px 50px 0 0;
+    width: 50%;
+    .sec-img{
+      width: 630px;
+      height: 390px;
+      @media (max-width: 800px) {
+        width: 390px;
+        height: 245px;
+    }
+    }
+  }
+}
+
+// Benefits
+
+.main-benefits{
+  display: flex;
+  flex-flow: column;
+  padding: 100px 0 30px 0;
+  .benefits{
+    display: flex;
+    flex-flow: column;
+    padding: 40px 115px 20px 85px;
+    .b-head{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 50px;
+      color: #000000;
+    }
+    .b-content{
+      padding: 10px 0 10px 0;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+    }
+  }
+  .benefits-box{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 20px 115px 45px 85px;
+    @media (max-width: 800px) {
+      flex-flow: column;
   }
   }
 }
