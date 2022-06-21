@@ -22,7 +22,7 @@ const Security = () => {
            <img className="vec" src={Vector}/>
             </div>
           </div>
-          <div className="security-img" data-aos="fade-left">
+          <div className="security-img" data-aos="fade-right">
             <img className="sec-img" src={secImg} alt="security"/>
           </div>
         </div>

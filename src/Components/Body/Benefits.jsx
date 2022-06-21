@@ -31,7 +31,7 @@ const Benefits = () => {
       </div>
       <div
         className="benefits-box"
-        data-aos="fade-left"
+        data-aos="fade-right"
       >
         {BenefitData.map((x) => {
           return (
