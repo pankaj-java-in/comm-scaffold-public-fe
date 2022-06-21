@@ -5,7 +5,7 @@ const Template = (props) => {
     const {image, head, content, type} = props;
     return (
         <div className={type=="benefit" ? "main-temp benefit-temp" : "main-temp"}>
-        <div className={type=="benefit" ? "temp-img" : ""}>
+        <div className={type=="benefit" ? "temp-img" : "temp-img-ad"}>
             <img src={image}/>
         </div>
         <div className="temp-head">

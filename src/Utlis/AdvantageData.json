@@ -1,7 +1,7 @@
 [
 {
     "item":"1",
-    "icon":"icon1",
+    "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Frame.svg",
     "head":"100% Secure",
     "content":"From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly.",
     "type":"advantage"
@@ -9,7 +9,7 @@
 },
 {
     "item":"2",
-    "icon":"icon2",
+    "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Frame+(1).svg",
     "head":"No Cookies Required",
     "content":"Age and draw mrs like. Improving end distrusts may instantly was household applauded incommode.",
     "type":"advantage"
@@ -17,7 +17,7 @@
 },
 {
     "item":"3",
-    "icon":"icon3",
+    "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Frame+(2).svg",
     "head":"Login Info Not Required",
     "content":"Draw mrs like. Improving end distrusts may instantly was household applauded incommode.",
     "type":"advantage"
@@ -25,7 +25,7 @@
 },
 {
     "item":"4",
-    "icon":"icon4",
+    "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Frame+(3).svg",
     "head":"Moneyback Guarantee",
     "content":"Improving end distrusts may instantly was from they fine john he give of rich he. They age and draw mrs like.",
     "type":"advantage"
