@@ -3,6 +3,7 @@ import Ani1 from "../../Utlis/Icons/ani1.svg";
 import Ani2 from "../../Utlis/Icons/ani2.svg";
 import Ani3 from "../../Utlis/Icons/ani3.svg";
 import AOS from "aos";
+import vectorDown from "../../Utlis/Icons/Vector.svg";
 
 const PrivateMeeting = () => {
   useEffect(() => {
@@ -10,7 +11,15 @@ const PrivateMeeting = () => {
       duration: 2000,
     });
   }, []);
+
+  const scrollDown = () => {
+    window.scrollTo({
+      top: 5000,
+      behavior: 'smooth'
+    })
+  }
   return (
+    <div className='vector-down'>
     <div className='main-private'>
         <div className='private' data-aos="fade-right">
             <div className='p-head'>Private meetings<br/> mean data privacy too!</div>
@@ -24,6 +33,8 @@ const PrivateMeeting = () => {
                 </div>
         </div>
     </div>
+     <img className='vector-img' src={vectorDown} onClick={() => scrollDown()}/>
+   </div>
   )
 }
 

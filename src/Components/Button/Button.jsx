@@ -2,7 +2,7 @@ import React from 'react';
 import "./Button.scss"
 
 const Button = (props) => {
-    const {type} = props;
+    const {type, setUserDeatail, userDetail} = props;
     const reqDemo = () => {
     window.scrollTo({
         top: 4250,

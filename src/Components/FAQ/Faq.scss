@@ -36,18 +36,21 @@
     }
       .question{
         height: 85px;
-        width: 330px;
+        width: 24.1vw;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 800;
         font-size: 45px;
         line-height: 48px;
         color: #000000;
+        @media (max-width: 800px) {
+          width: 330px;
+      }
       }
       .answer{
         padding-top: 35px;
         height: 74px;
-        width: 450px;
+        width: 32.9vw;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
@@ -57,7 +60,7 @@
         color: #1B1C31;
         @media (max-width: 800px) {
           height: fit-content;
-          width: 95vw;
+          width: 450px;
       }
       }
     }
