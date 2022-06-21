@@ -16,7 +16,7 @@ $scrollBarHeight: 1px;
     height: 24rem;
     padding: 45px 0 20px 0;
     @media (max-width: 800px) {
-      padding: 150px 0 30px 0;
+      padding: 30px 0 45px 0;
   }
     .features{
         display: flex;
@@ -327,7 +327,8 @@ $scrollBarHeight: 1px;
   box-shadow: 0px 16px 54px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   padding: 0px;
-  width: 260px;
+  margin-top: 10px;
+  width: 20vw;
 }
 .benefit-cont{
 text-align: center;
@@ -416,7 +417,7 @@ padding: 0 20px 25px 20px;
 .main-benefits{
   display: flex;
   flex-flow: column;
-  padding: 100px 0 30px 0;
+  padding: 0 0 30px 0;
   .block-corner{
     display: flex;
     flex-flow: row;
@@ -451,6 +452,7 @@ padding: 0 20px 25px 20px;
     padding: 20px 115px 45px 85px;
     @media (max-width: 800px) {
       flex-flow: column;
+      padding: 20px 0 45px 0;
   }
   }
 }
@@ -586,5 +588,78 @@ padding: 0 20px 25px 20px;
   .box-square-img{
     width: 241px;
     padding-top: 30px;
+  }
+}
+
+// PrivateMeetings
+
+.main-private{
+  display: flex;
+  flex-flow: row;
+  padding: 150px 20px 80px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #E3E6E9;
+  @media (max-width: 800px) {
+    flex-flow: column;
+}
+  .private{
+    width: 50%;
+    padding-top: 45px;
+    @media (max-width: 800px) {
+      width: 100%;
+      // background: url("https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/45edd6e8-a2f8-4166-8e24-6a1c8e627bfd_Property 1=Frame 65.png");
+  }
+    .p-head{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 65px;
+      color: #000000;
+      padding: 30px 95px 20px 65px;
+      @media (max-width: 800px) {
+        padding: 0;
+    }
+    }
+    .p-content{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: 0.01em;
+      color: #000000;
+      padding: 0 195px 20px 65px;
+      @media (max-width: 800px) {
+        padding: 15px 0 0 0;
+    }
+    }
+  }
+  .private-animate{
+    position: relative;
+    @media (max-width: 800px) {
+      display: none;
+  }
+    .private-images{
+      .ani1{
+        position: absolute;
+        width: 25vw;
+        height: 65.6vh;
+        right: 22.5vw;
+        top: -3vh;
+      }
+        .ani2{
+          height: 70vh;
+          width: 25vw;
+          padding-right: 3.2vw;
+        }
+      .ani3{
+        position: absolute;
+        width: 21.5vw;
+        height: 55.6vh;
+        top: 2.6vh;
+        right: 1.9vw;
+      }
+    }
   }
 }
