@@ -7,7 +7,7 @@ const Header = () => {
         <div className="main-header">
             <div className='header'>
             <div className='header-logo'>
-                <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Oodles+Scaffold+2.svg"} alt="Oodles"/>
+                <img className='logo' src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Oodles+Scaffold+2.svg"} alt="Oodles"/>
             </div>
             <div>
                 <Button/>

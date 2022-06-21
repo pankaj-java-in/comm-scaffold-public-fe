@@ -66,7 +66,20 @@ const Features = () => {
                 </div>
               </div>
               </div>
-              <div className="box" style={{marginBottom:"-200px"}}>
+              <div className="box">
+            <div className="items">
+                <div className="icon">
+                  <img src={breakOut} alt="breakout"/>
+                </div>
+                <div className="item-head">
+                Breakout Rooms
+                </div>
+                <div className="item-content">
+                Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.
+                </div>
+              </div>
+              </div>
+              <div className="box" style={{marginBottom:"-170px"}}>
             <div className="items">
                 <div className="icon">
                   <img src={recording} alt="recording"/>

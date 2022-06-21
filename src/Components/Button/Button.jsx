@@ -14,9 +14,9 @@ const Button = (props) => {
             <div className='content'>
             Request a Demo 
             </div>
-            <div className='arrow'>
+            {/* <div className='arrow'>
             {type === "request" ? "" : "->"}
-            </div>
+            </div> */}
         </div>
     )
 }

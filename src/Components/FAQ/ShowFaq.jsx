@@ -7,28 +7,31 @@ function ShowFaq() {
   const data = {
     rows: [
       {
-        title: "Lorem ipsum dolor sit amet,",
-        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
-              ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
-              In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
-              Fusce sed commodo purus, at tempus turpis.`
+        title: "1.Do we need a Cloud server to deploy the application?",
+        content: `Yes, it is strongly recommended. However, it is possible to deploy the application on 
+        premise as well.`
       },
       {
-        title: "Nunc maximus, magna at ultricies elementum",
+        title: "2.Can we use similar Apps like Zoom, Skype with Scaffold Integration?",
         content:
-          "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor."
+          `Yes, Scaffold works as an independent and stand alone application. It doesn’t block any App if in use.`
       },
       {
-        title: "Curabitur laoreet, mauris vel blandit fringilla",
-        content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `
+        title: "3.What do you use to send Information for a real-time sync?",
+        content: `We use websockets.`
       },
       {
-        title: "What is the package version",
-        content: <p>current version is 1.2.1</p>
+        title: "4.Name some Inbuilt functionalities of Scaffold?",
+        content: 'Chat, Call, Video, Meeting, Screen sharing are some of inbuilt functionalities.'
+      },
+      {
+        title: "5.How secure is my company’s data on your platform?",
+        content: 'The data is stored on the servers which are under your control. So, you manage the security. As  An additional check, scheduled backups will be set on cloud so thatrestoration can happen in Case of any unforeseen circumstances.'
       }
+      // {
+      //   title: "Name some Inbuilt functionalities of Scaffold?",
+      //   content: 'Chat, Call, Video, Meeting, Screen sharing are some of inbuilt functionalities.'
+      // }
     ]
   };
 

@@ -57,7 +57,7 @@ $scrollBarHeight: 1px;
           }
             .horizontal-scroll-wrapper {
                 width: 300px;
-                max-height: 98vw;
+                max-height: 97vw;
                 overflow-y: auto;
                 overflow-x: hidden;
                 transform: rotate(-90deg) translateY(-$finalHeight);
@@ -167,7 +167,7 @@ $scrollBarHeight: 1px;
 .main-imp{
   display: flex;
   flex-flow: column;
-  padding: 45px 35px 45px 35px;
+  padding: 60px 35px 45px 35px;
   background: #F1F5F8;
   .imp{
     display: flex;
@@ -202,7 +202,7 @@ $scrollBarHeight: 1px;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    padding: 45px 50px 45px 50px;
+    padding: 45px 50px 25px 50px;
     @media (max-width: 800px) {
         flex-flow: column;
         justify-content: center;
@@ -329,6 +329,9 @@ $scrollBarHeight: 1px;
   padding: 0px;
   margin-top: 10px;
   width: 22vw;
+  @media (max-width: 800px) {
+   width: 80vw;
+}
 }
 .benefit-cont{
 text-align: center;
@@ -427,6 +430,11 @@ padding: 0 20px 25px 20px;
     display: flex;
     flex-flow: column;
     padding: 40px 115px 20px 53px;
+    transition-delay: 1s;
+    @media (max-width: 800px) {
+      align-items: center;
+      padding: 40px 50px 20px 50px;
+  }
     .b-head{
       font-family: 'Manrope';
       font-style: normal;
@@ -443,6 +451,9 @@ padding: 0 20px 25px 20px;
       font-size: 18px;
       line-height: 24px;
       color: #000000;
+      @media (max-width: 800px) {
+        text-align: justify;
+    }
     }
   }
   .benefits-box{
@@ -450,9 +461,11 @@ padding: 0 20px 25px 20px;
     flex-flow: row;
     justify-content: space-around;
     padding: 20px 46px 45px 46px;
+    transition-delay: 1s;
     @media (max-width: 800px) {
       flex-flow: column;
       padding: 20px 0 45px 0;
+      align-items: center;
   }
   }
 }
@@ -615,9 +628,11 @@ padding: 0 20px 25px 20px;
       font-size: 46px;
       line-height: 65px;
       color: #000000;
-      padding: 30px 95px 20px 35px;
+      padding: 30px 95px 20px 33px;
       @media (max-width: 800px) {
         padding: 0;
+        font-size: 40px;
+        line-height: 50px;
     }
     }
     .p-content{
@@ -628,7 +643,7 @@ padding: 0 20px 25px 20px;
       line-height: 25px;
       letter-spacing: 0.01em;
       color: #000000;
-      padding: 0 195px 20px 35px;
+      padding: 0 195px 20px 33px;
       @media (max-width: 800px) {
         padding: 15px 0 0 0;
     }
@@ -636,6 +651,7 @@ padding: 0 20px 25px 20px;
   }
   .private-animate{
     position: relative;
+    transition-delay: 1s;
     @media (max-width: 800px) {
       display: none;
   }
@@ -646,11 +662,13 @@ padding: 0 20px 25px 20px;
         height: 65.6vh;
         right: 22.5vw;
         top: -3vh;
+        transition-delay: 1s;
       }
         .ani2{
           height: 70vh;
           width: 25vw;
           padding-right: 3.2vw;
+          transition-delay: 2s;
         }
       .ani3{
         position: absolute;
@@ -658,6 +676,7 @@ padding: 0 20px 25px 20px;
         height: 55.6vh;
         top: 2.6vh;
         right: 1.9vw;
+        transition-delay: 3s;
       }
     }
   }

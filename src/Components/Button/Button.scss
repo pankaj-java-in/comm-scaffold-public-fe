@@ -15,6 +15,10 @@
     .arrow{
         color: white;
     }
+    @media (max-width: 800px) {
+        // width: 35vw;
+        // margin-left: -40px;
+    }
 }
 .req-btn{
     width: 29.2vw;
