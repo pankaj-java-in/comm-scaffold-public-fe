@@ -11,8 +11,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @media (max-width: 800px) {
-            flex-flow: column;
+        .header-logo{
+            padding-top: 5px;
+            .logo{
+                @media (max-width: 800px) {
+                    width: 50vw;
+                }
+            }
         }
     }
 }

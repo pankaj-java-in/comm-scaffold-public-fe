@@ -14,9 +14,9 @@ $scrollBarHeight: 1px;
 .main-features{
     background: linear-gradient(180deg, #011054 0%, #1344A4 100%);
     height: 24rem;
-    padding: 130px 0 20px 0;
+    padding: 45px 0 20px 0;
     @media (max-width: 800px) {
-      padding: 150px 0 30px 0;
+      padding: 30px 0 45px 0;
   }
     .features{
         display: flex;
@@ -57,7 +57,7 @@ $scrollBarHeight: 1px;
           }
             .horizontal-scroll-wrapper {
                 width: 300px;
-                max-height: 98vw;
+                max-height: 97vw;
                 overflow-y: auto;
                 overflow-x: hidden;
                 transform: rotate(-90deg) translateY(-$finalHeight);
@@ -124,11 +124,13 @@ $scrollBarHeight: 1px;
 .main-help{
   display: flex;
   flex-flow: column;
-  padding:35px 0 95px 0;
+  padding:0 0 95px 0;
   .help{
-    padding: 50px 240px 20px 67px;
+    padding: 80px 360px 20px 50px;
+    @media (max-width: 800px) {
+      padding: 80px 40px 20px 40px;
+  }
     .help-head{
-      height: 45px;
       font-family: 'Manrope';
       font-style: normal;
       font-weight: 800;
@@ -137,56 +139,27 @@ $scrollBarHeight: 1px;
       color: #000000;
     }
     .help-content{
-      padding-top: 20px;
-      height: 42px;
+      padding: 20px 180px 0 0;
       font-family: 'Manrope';
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       line-height: 24px;
       color: #000000;
+      @media (max-width: 800px) {
+        padding: 20px 0 0 0;
+    }
     }
   }
   .box-square{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    padding: 35px 67px 40px 48px;
+    padding: 30px 20px 40px 20px;
     @media (max-width: 800px) {
       flex-flow: column;
+      padding: 0px 20px 40px 20px;
   }
-    .single-box{
-      width: 250px;
-      height: 282px;
-      border-top: 1px solid #000000;
-      margin-right: 13px;
-      .box-square-head{
-        height: 22px;
-        font-family: 'Manrope';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 27px;
-        text-align: left;
-        color: #000000;
-        padding: 20px 0 20px 0;
-      }
-      .box-square-content{
-          height: 60px;
-          width: 245px;
-          font-family: 'Manrope';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 22px;
-          color: #000000;
-          text-align: left;
-      }
-      .box-square-img{
-        width: 241px;
-        padding-top: 30px;
-      }
-    }
   }
 }
 // Implementation
@@ -194,7 +167,7 @@ $scrollBarHeight: 1px;
 .main-imp{
   display: flex;
   flex-flow: column;
-  padding: 45px 35px 45px 35px;
+  padding: 60px 35px 45px 35px;
   background: #F1F5F8;
   .imp{
     display: flex;
@@ -229,7 +202,7 @@ $scrollBarHeight: 1px;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    padding: 45px 50px 45px 50px;
+    padding: 45px 50px 25px 50px;
     @media (max-width: 800px) {
         flex-flow: column;
         justify-content: center;
@@ -298,5 +271,413 @@ $scrollBarHeight: 1px;
     @media (max-width: 800px) {
       padding-bottom: 45px;
   }
+  }
+}
+
+// Advantages
+
+.main-adv{
+  padding: 75px 30px 75px 30px;
+  .adv{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding-top: 45px;
+    @media (max-width: 800px) {
+      flex-flow: column;
+  }
+  }
+}
+
+// Template
+
+.main-temp{
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-flow: column;
+  .temp-head{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    padding: 12px 0 12px 0;
+  }
+  .temp-content{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #000000;
+    // width: 270px;
+  }
+  .temp-img{
+    padding: 17px 10px 10px 17px; 
+  }
+  .temp-img-ad{
+    height: 45px;
+  }
+}
+.benefit-temp{
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 54px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 0px;
+  margin-top: 10px;
+  width: 22vw;
+  @media (max-width: 800px) {
+   width: 80vw;
+}
+}
+.benefit-cont{
+text-align: center;
+// width: 220px!important;
+padding: 0 20px 25px 20px;
+}
+
+// Security
+
+.main-security{
+  display: flex;
+  flex-flow: row;
+  padding-bottom: 60px;
+  @media (max-width: 800px) {
+    flex-flow: column;
+}
+  .security{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    padding: 75px 0 0 75px;
+    @media (max-width: 800px) {
+      width: 90%;
+      padding: 30px 20px 0 20px;
+  }
+    .sec-head{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 51px;
+      color: #000000;
+      padding: 40px 40px 0 0;
+      @media (max-width: 800px) {
+        padding: 0;
+        font-size: 32px;
+        line-height: 45px;
+    }
+    }
+    .sec-content{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+      padding: 25px 75px 25px 0;
+      @media (max-width: 800px) {
+        padding: 25px 0 25px 0;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    }
+    .sec-button{
+      display: flex;
+      flex-flow: row;
+      .btn{
+        padding: 49px 50px 0 0;
+        @media (max-width: 800px) {
+          padding: 0;
+      }
+      }
+      .vec{
+        @media (max-width: 800px) {
+          display: none;
+      }
+      }
+    }
+  }
+  .security-img{
+    padding: 30px 50px 0 0;
+    width: 50%;
+    .sec-img{
+      width: 630px;
+      height: 390px;
+      @media (max-width: 800px) {
+        width: 390px;
+        height: 245px;
+    }
+    }
+  }
+}
+
+// Benefits
+
+.main-benefits{
+  display: flex;
+  flex-flow: column;
+  padding: 0 0 30px 0;
+  .block-corner{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  .benefits{
+    display: flex;
+    flex-flow: column;
+    padding: 40px 115px 20px 53px;
+    transition-delay: 1s;
+    @media (max-width: 800px) {
+      align-items: center;
+      padding: 40px 50px 20px 50px;
+  }
+    .b-head{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 50px;
+      color: #000000;
+    }
+    .b-content{
+      padding: 10px 0 10px 0;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+      @media (max-width: 800px) {
+        text-align: justify;
+    }
+    }
+  }
+  .benefits-box{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 20px 46px 45px 46px;
+    transition-delay: 1s;
+    @media (max-width: 800px) {
+      flex-flow: column;
+      padding: 20px 0 45px 0;
+      align-items: center;
+  }
+  }
+}
+
+// feat
+
+.feat-box{
+  display: flex;
+  flex-flow: row;
+  .box-ss{
+    height: 200px;
+    width: 300px;
+    border: 2px solid;
+  }
+}
+
+// Industry
+
+.main-industry{
+  height: 263px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Frame+69+(1).svg"), #011054;
+  .ind-head{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 320px 0 320px;
+    @media (max-width: 800px) {
+      padding: 0;
+  }
+  }
+  .ind-content{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;  
+    padding: 10px 253px 10px 253px;  
+    @media (max-width: 800px) {
+      padding: 0;
+  }
+  }
+  .ind-button{
+    padding-top: 15px;
+  }
+}
+
+// Demo
+
+.main-demo{
+  background: url("https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/fc1c06ed-3dec-4079-b879-592a3747becc_Frame 81 (1).png"),  #010F54;
+  padding: 60px 0 60px 60px;
+  .demo-box{
+    width: 37.6vw;
+    display: flex;
+    flex-flow: column;
+    background: url("https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/93d14dee-c741-4129-874e-bf012f0bc092_Group 1000000796.png");
+    border-radius: 15px;
+    padding: 44px 39px 50px 55px;
+    .demo-head{
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #DEE1E6;
+    }
+    .demo-content{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      padding: 10px 0 10px 0;
+    }
+    .demo-input{
+      padding: 10px 0 10px 0;
+      background: #FAFAFA;
+      border: 1px solid #E0E0E0;
+      border-radius: 4px;
+      margin-top: 10px;
+      width: 31vw;
+    }
+    .demo-button{
+      padding-top: 20px;
+    }
+  }
+}
+
+// Helping Template
+
+.single-box-temp{
+  width: 250px;
+  border-top: 1px solid #000000;
+  @media (max-width: 800px) {
+    margin-top: 13px;
+}
+  .box-square-head{
+    height: 22px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left;
+    color: #000000;
+    padding: 20px 0 20px 0;
+  }
+  .box-square-content{
+      height: 60px;
+      width: 245px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      text-align: left;
+  }
+  .box-square-img{
+    width: 249px;
+    padding-top: 30px;
+  }
+}
+
+// PrivateMeetings
+
+.main-private{
+  display: flex;
+  flex-flow: row;
+  padding: 150px 20px 80px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #E3E6E9;
+  @media (max-width: 800px) {
+    flex-flow: column;
+}
+  .private{
+    width: 50%;
+    padding-top: 45px;
+    @media (max-width: 800px) {
+      width: 100%;
+      // background: url("https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/45edd6e8-a2f8-4166-8e24-6a1c8e627bfd_Property 1=Frame 65.png");
+  }
+    .p-head{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 46px;
+      line-height: 65px;
+      color: #000000;
+      padding: 30px 95px 20px 33px;
+      @media (max-width: 800px) {
+        padding: 0;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    }
+    .p-content{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: 0.01em;
+      color: #000000;
+      padding: 0 195px 20px 33px;
+      @media (max-width: 800px) {
+        padding: 15px 0 0 0;
+    }
+    }
+  }
+  .private-animate{
+    position: relative;
+    transition-delay: 1s;
+    @media (max-width: 800px) {
+      display: none;
+  }
+    .private-images{
+      .ani1{
+        position: absolute;
+        width: 25vw;
+        height: 65.6vh;
+        right: 22.5vw;
+        top: -3vh;
+        transition-delay: 1s;
+      }
+        .ani2{
+          height: 70vh;
+          width: 25vw;
+          padding-right: 3.2vw;
+          transition-delay: 2s;
+        }
+      .ani3{
+        position: absolute;
+        width: 21.5vw;
+        height: 55.6vh;
+        top: 2.6vh;
+        right: 1.9vw;
+        transition-delay: 3s;
+      }
+    }
   }
 }

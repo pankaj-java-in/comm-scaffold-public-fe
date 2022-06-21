@@ -1,0 +1,35 @@
+[
+    {
+        "item":"1",
+        "icon":"https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/c8220430-0780-44a6-bfba-c6f78c55f2fe_developers-create-internet-app-software-engineering-computer-technology-website-development-web-application-coding-design-web-150140993-transformed 1.png",
+        "head":"Browser Based",
+        "content":"Completely browser based for greater accessibility.",
+        "type":"benefit"
+    
+    },
+    {
+        "item":"2",
+        "icon":"https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/eb19c36c-01d9-4a16-91e8-ef84dfc2666d_data-privacy-abstract-concept-vector-illustration-internet-policy-information-safety-regulation-personal-protection-security-194532951-transformed 1.png",
+        "head":"Private Data",
+        "content":"Complete data control as no data sharing is required. ",
+        "type":"benefit"
+    
+    },
+    {
+        "item":"3",
+        "head":"Multiple Meetings",
+        "icon":"https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/6ac49d4a-aff2-4d19-a6ae-c52f83c461ad_port-project 1.png",
+        "content":"Run as many simultaneous meetings as you need. ",
+        "type":"benefit"
+    
+    },
+    {
+        "item":"4",
+        "icon":"https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/0bf858fa-d889-42cb-9a68-14f9d470749b_employer-manages-cloud-server-hosting-4153017-3443563 1.png",
+        "head":"File Sharing",
+        "content":"Multimedia File sharing capabilities as well as video recording functionality.",
+        "type":"benefit"
+    
+    }
+    ]
+    

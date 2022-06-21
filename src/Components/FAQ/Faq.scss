@@ -20,8 +20,9 @@
   .main-faq{
     display: flex;
     flex-flow: row;
-    height: 498px;
-    padding: 110px 106px 10px 74px;
+    min-height: 380px;
+    height: auto;
+    padding: 110px 50px 10px 50px;
     background: #F1F5F8;
     @media (max-width: 800px) {
       flex-flow: column;

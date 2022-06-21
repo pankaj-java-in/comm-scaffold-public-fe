@@ -3,8 +3,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 183px;
-    height: 37.54px;
+    width: 170px;
+    height: 29.54px;
     background: #E1593E;
     gap: 8px;
     border-radius: 8px;
@@ -15,4 +15,11 @@
     .arrow{
         color: white;
     }
+    @media (max-width: 800px) {
+        // width: 35vw;
+        // margin-left: -40px;
+    }
+}
+.req-btn{
+    width: 29.2vw;
 }
