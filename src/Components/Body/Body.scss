@@ -179,6 +179,9 @@ $scrollBarHeight: 1px;
   flex-flow: column;
   padding: 60px 35px 45px 35px;
   background: #F1F5F8;
+  @media (max-width: 380px) {
+  padding: 60px 55px 45px 35px; 
+  }
   .imp{
     display: flex;
     flex-flow: column;
@@ -420,8 +423,8 @@ padding: 0 20px 25px 20px;
       width: 46.12vw;
       height: 50.7vh;
       @media (max-width: 800px) {
-        width: 390px;
-        height: 245px;
+        width: 300px;
+        height: 200px;
     }
     }
   }
@@ -503,6 +506,9 @@ padding: 0 20px 25px 20px;
   justify-content: center;
   align-items: center;
   background: url("https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Frame+69+(1).svg"), #011054;
+  @media (max-width: 800px) {
+   height: 100%;
+}
   .ind-head{
     font-family: 'Manrope';
     font-style: normal;
@@ -514,6 +520,10 @@ padding: 0 20px 25px 20px;
     padding: 15px 320px 0 320px;
     @media (max-width: 1240px) {
       padding: 0;
+  }
+  @media (max-width: 800px) {
+    font-size: 32px;
+    line-height: 40px;
   }
   }
   .ind-content{
@@ -527,6 +537,9 @@ padding: 0 20px 25px 20px;
     padding: 10px 253px 10px 253px;  
     @media (max-width: 1240px) {
     padding: 10px 150px 10px 150px;  
+  }
+  @media (max-width: 800px) {
+    padding: 10px 50px 10px 50px;  
   }
   }
   .ind-button{
