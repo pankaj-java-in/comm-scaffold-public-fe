@@ -126,7 +126,7 @@ $scrollBarHeight: 1px;
   flex-flow: column;
   padding:0 0 95px 0;
   .help{
-    padding: 80px 360px 20px 59px;
+    padding: 80px 360px 20px 50px;
     @media (max-width: 800px) {
       padding: 80px 40px 20px 40px;
   }
@@ -155,10 +155,10 @@ $scrollBarHeight: 1px;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    padding: 30px 48px 40px 48px;
+    padding: 30px 20px 40px 20px;
     @media (max-width: 800px) {
       flex-flow: column;
-      padding: 0px 48px 40px 48px;
+      padding: 0px 20px 40px 20px;
   }
   }
 }
@@ -328,7 +328,7 @@ $scrollBarHeight: 1px;
   border-radius: 10px;
   padding: 0px;
   margin-top: 10px;
-  width: 20vw;
+  width: 22vw;
 }
 .benefit-cont{
 text-align: center;
@@ -426,7 +426,7 @@ padding: 0 20px 25px 20px;
   .benefits{
     display: flex;
     flex-flow: column;
-    padding: 40px 115px 20px 85px;
+    padding: 40px 115px 20px 53px;
     .b-head{
       font-family: 'Manrope';
       font-style: normal;
@@ -449,7 +449,7 @@ padding: 0 20px 25px 20px;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    padding: 20px 115px 45px 85px;
+    padding: 20px 46px 45px 46px;
     @media (max-width: 800px) {
       flex-flow: column;
       padding: 20px 0 45px 0;
@@ -559,7 +559,6 @@ padding: 0 20px 25px 20px;
 .single-box-temp{
   width: 250px;
   border-top: 1px solid #000000;
-  margin-right: 65px;
   @media (max-width: 800px) {
     margin-top: 13px;
 }
@@ -586,7 +585,7 @@ padding: 0 20px 25px 20px;
       text-align: left;
   }
   .box-square-img{
-    width: 241px;
+    width: 249px;
     padding-top: 30px;
   }
 }

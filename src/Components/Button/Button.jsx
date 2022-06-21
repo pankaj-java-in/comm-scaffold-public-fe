@@ -3,8 +3,14 @@ import "./Button.scss"
 
 const Button = (props) => {
     const {type} = props;
+    const reqDemo = () => {
+    window.scrollTo({
+        top: 4250,
+        behavior: 'smooth'
+      });
+    };
     return (
-        <div className={type === "request" ? "main-button req-btn" : "main-button"}>
+        <div className={type === "request" ? "main-button req-btn" : "main-button"} onClick={() => reqDemo()}>
             <div className='content'>
             Request a Demo 
             </div>
