@@ -35,7 +35,7 @@ const Implementation = () => {
             <div className="imp-box-head">Just Few Lines Of Code</div>
             <div className="imp-box-content">At vero eos accusamus iusto odio dignissims ducimus blanditiis praesentium voluptatum deleniti atque corrupti dolores et quas.</div>
             </div>
-            <img className="imp-img" src={arrow} alt="arrow"/>
+            <img className="imp-img" src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+14.svg"} alt="arrow"/>
             <div className="imp-box-single">
             <div className="imp-box-circle">
             <div className="big-circle"></div>
