@@ -1,10 +1,9 @@
 import React,{useEffect} from "react";
 import "./Body.scss";
-import chatImage from "../../Utlis/Icons/image 64.svg";
-import breakOut from "../../Utlis/Icons/image 70.svg";
-import dynamic from "../../Utlis/Icons/image 71.svg";
-import recording from "../../Utlis/Icons/image 72.svg";
 import AOS from "aos";
+import FeatureTemplate from "./FeatureTemplate";
+import FeatureData from "../../Utlis/FeatureData.json";
+import ICONS from "../../Utlis/Constants/icons";
 
 const Features = () => {
 
@@ -31,7 +30,7 @@ const Features = () => {
             <div className="box" style={{marginTop:"310px"}}>
               <div className="items">
                 <div className="icon">
-                  <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+64.svg"} alt="chatIcon"/>
+                  <img src={ICONS.MESSAGE_ICON} alt="chatIcon"/>
                 </div>
                 <div className="item-head">
                 Private/Public Chat
@@ -41,49 +40,22 @@ const Features = () => {
                 </div>
               </div>
             </div>
-            <div className="box">
-            <div className="items">
-                <div className="icon">
-                  <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg"} alt="breakout"/>
-                </div>
-                <div className="item-head">
-                Breakout Rooms
-                </div>
-                <div className="item-content">
-                Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.
-                </div>
-              </div>
-              </div>
-              <div className="box">
-            <div className="items">
-                <div className="icon">
-                  <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+71.svg"} alt='dyanmic'/>
-                </div>
-                <div className="item-head">
-                   Dynamic Role Change
-                </div>
-                <div className="item-content">
-                Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.
-                </div>
-              </div>
-              </div>
-              <div className="box">
-            <div className="items">
-                <div className="icon">
-                  <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg"} alt="breakout"/>
-                </div>
-                <div className="item-head">
-                Breakout Rooms
-                </div>
-                <div className="item-content">
-                Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.
-                </div>
-              </div>
-              </div>
+            {
+              FeatureData.map( x => {
+                return (
+                  <FeatureTemplate
+                  key={x.item}
+                  image={x.icon}
+                  head={x.head}
+                  content={x.content}
+                  />
+                )
+              })
+            }
               <div className="box" style={{marginBottom:"-170px"}}>
             <div className="items">
                 <div className="icon">
-                  <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+72.svg"} alt="recording"/>
+                  <img src={ICONS.RECORDING_ICON} alt="recording"/>
                 </div>
                 <div className="item-head" style={{fontSize:"19px"}}>
                 Recording with Custom Layout

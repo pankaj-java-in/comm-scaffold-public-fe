@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import Template from "./Template";
 import BenefitData from "../../Utlis/BenefitData.json";
 import AOS from "aos";
-import LeftCorner from "../../Utlis/Icons/corner1.svg";
-import RightCorner from "../../Utlis/Icons/corner2.svg";
+import ICONS from "../../Utlis/Constants/icons";
 
 const Benefits = () => {
   useEffect(() => {
@@ -15,8 +14,8 @@ const Benefits = () => {
   return (
     <div className="main-benefits">
      <div className="block-corner" data-aos="fade-down">
-      <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/corner1.svg"}/>
-      <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/corner2.svg"}/>
+      <img src={ICONS.LEFT_CORNER}/>
+      <img src={ICONS.RIGHT_CORNER}/>
      </div>
       <div
         className="benefits"

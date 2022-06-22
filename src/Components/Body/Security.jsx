@@ -1,8 +1,7 @@
 import React, {useEffect} from "react";
-import secImg from "../../Utlis/Icons/image 69.svg";
-import Vector from "../../Utlis/Icons/Vector 7.svg";
 import Button from "../Button/Button";
 import AOS from "aos";
+import ICONS from "../../Utlis/Constants/icons";
 
 const Security = () => {
 
@@ -20,11 +19,11 @@ const Security = () => {
             <div className="sec-content">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</div>
             <div className="sec-button">
            <div className="btn"><Button/></div>
-           <img className="vec" src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Vector+7.svg"}/>
+           <img className="vec" src={ICONS.VECTOR}/>
             </div>
           </div>
-          <div className="security-img" data-aos="fade-right">
-            <img className="sec-img" src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+69.svg"} alt="security"/>
+          <div className="security-img" data-aos="fade-left">
+            <img className="sec-img" src={ICONS.SECURITY} alt="security"/>
           </div>
         </div>
     )

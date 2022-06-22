@@ -1,9 +1,6 @@
 import React, {useEffect} from 'react'
-import Ani1 from "../../Utlis/Icons/ani1.svg";
-import Ani2 from "../../Utlis/Icons/ani2.svg";
-import Ani3 from "../../Utlis/Icons/ani3.svg";
 import AOS from "aos";
-import vectorDown from "../../Utlis/Icons/Vector.svg";
+import ICONS from '../../Utlis/Constants/icons';
 
 const PrivateMeeting = () => {
   useEffect(() => {
@@ -27,13 +24,13 @@ const PrivateMeeting = () => {
         </div>
         <div className='private-animate' data-aos="fade-right">
             <div className='private-images'>
-                <img className='ani1' data-aos="fade-right" src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/ani1.svg"}/>
-                <img className='ani2' data-aos="fade-down" src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/ani2.svg"}/>
-                <img className='ani3' data-aos="fade-up" src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/ani3.svg"}/>
+                <img className='ani1' data-aos="fade-right" src={ICONS.ANIMATION_1}/>
+                <img className='ani2' data-aos="fade-down" src={ICONS.ANIMATION_2}/>
+                <img className='ani3' data-aos="fade-up" src={ICONS.ANIMATION_3}/>
                 </div>
         </div>
     </div>
-     <img className='vector-img' src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Vector.svg"} onClick={() => scrollDown()}/>
+     <img className='vector-img' src={ICONS.DOWN_ARROW} onClick={() => scrollDown()}/>
    </div>
   )
 }
