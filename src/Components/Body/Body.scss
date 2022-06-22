@@ -66,9 +66,11 @@ $scrollBarHeight: 1px;
                   max-height: 86vw;
                   width: 300px;
               }
+              @media (min-width: 1400px) {
+                width: 21.5vw;
+            }
               @media (min-width: 1450px) {
                 width: 300px;
-                max-height: 97vw;
             }
             @media (min-width: 1750px) {
               width: 300px;
@@ -426,6 +428,9 @@ padding: 0 20px 25px 20px;
         width: 300px;
         height: 200px;
     }
+    @media (min-width: 1400px) {
+      height: 80vh;
+  }
     }
   }
 }
@@ -559,6 +564,9 @@ padding: 0 20px 25px 20px;
     background: url("https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/93d14dee-c741-4129-874e-bf012f0bc092_Group 1000000796.png");
     border-radius: 15px;
     padding: 44px 39px 50px 55px;
+    @media (min-width: 1380px) {
+      max-width: 500px;
+  }
     .demo-head{
       font-family: 'Gilroy';
       font-style: normal;
@@ -585,6 +593,9 @@ padding: 0 20px 25px 20px;
       border-radius: 4px;
       margin-top: 10px;
       width: 31vw;
+      @media (min-width: 1380px) {
+        max-width: 500px;
+    }
     }
     .demo-button{
       padding-top: 20px;
@@ -629,6 +640,9 @@ padding: 0 20px 25px 20px;
         height: 60px;
         width: 245px;
     }
+    @media (min-width: 1400px) {
+      height: 12.8vh;
+  }
   }
   .box-square-img{
     width: 18.2vw;

@@ -9,6 +9,9 @@
     gap: 8px;
     border-radius: 8px;
     padding: 8px 12px 8px 15px;
+    @media (min-width: 1380px) {
+        max-width: 475px;
+    }
     .content{
         color: white;
     }
