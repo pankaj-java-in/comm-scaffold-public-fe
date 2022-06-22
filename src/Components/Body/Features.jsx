@@ -11,6 +11,7 @@ const Features = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
+      once: true,
     });
   }, []);
 
@@ -25,7 +26,7 @@ const Features = () => {
             alteration boisterous the attachment.
           </div>
         </div>
-        <div className="rotation" data-aos="fade-right">
+        <div className="rotation" data-aos="fade-left">
           <div className="horizontal-scroll-wrapper squares">
             <div className="box" style={{marginTop:"310px"}}>
               <div className="items">

@@ -9,6 +9,7 @@ const Benefits = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
+      once: true,
     });
   }, []);
   return (
@@ -31,7 +32,7 @@ const Benefits = () => {
       </div>
       <div
         className="benefits-box"
-        data-aos="fade-right"
+        data-aos="fade-left"
       >
         {BenefitData.map((x) => {
           return (
