@@ -6,8 +6,7 @@ const RequestDemo = () => {
     name: "",
     email: "",
   });
-
-  console.log(userDetail,"detail")
+  const [validEmail , setValidEmail] = useState(true);
 
   const details = (e) => {
     const { name, value } = e.target;
@@ -36,11 +35,13 @@ const RequestDemo = () => {
           onChange={details}
           value={userDetail.email}
         />
+        {!validEmail && <div className="valid-email" >Enter a valid Email</div>}
         <div className="demo-button">
           <Button
             type={"request"}
             setUserDeatail={setUserDeatail}
             userDetail={userDetail}
+            setValidEmail={setValidEmail}
           />
         </div>
       </div>

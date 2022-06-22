@@ -1,9 +1,10 @@
 import React from 'react';
 import "./Button.scss";
 import axios from 'axios';
+import validator from 'validator';
 
 const Button = (props) => {
-    const {type, setUserDeatail, userDetail} = props;
+    const {type, setUserDeatail, userDetail, setValidEmail} = props;
 
     const reqDemo = () => {
     window.scrollTo({
@@ -33,7 +34,12 @@ const Button = (props) => {
     const buttonClick = () => {
         if(type === 'request'){
             if(userDetail.name.length && userDetail.email.length > 0){
-            requestDemoApi();
+              if(validator.isEmail(userDetail.email)){
+                setValidEmail(true);
+                requestDemoApi();
+              } else {
+                setValidEmail(false);
+              }
             } else {
                 console.log("fill user details")
             }

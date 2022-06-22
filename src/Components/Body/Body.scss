@@ -583,6 +583,13 @@ $scrollBarHeight: 1px;
         max-width: 500px;
       }
     }
+    .valid-email{
+      padding: 10px 0 0 0;
+      width: 13vw;
+      font-size: 14px;
+      font-family: var(--primary-font);
+      color: red;
+    }
     .demo-button {
       padding-top: 20px;
     }
