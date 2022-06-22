@@ -14,8 +14,8 @@ const Benefits = () => {
   return (
     <div className="main-benefits">
      <div className="block-corner" data-aos="fade-down">
-      <img src={LeftCorner}/>
-      <img src={RightCorner}/>
+      <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/corner1.svg"}/>
+      <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/corner2.svg"}/>
      </div>
       <div
         className="benefits"

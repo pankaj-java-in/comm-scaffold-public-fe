@@ -30,7 +30,7 @@ const Features = () => {
             <div className="box" style={{marginTop:"310px"}}>
               <div className="items">
                 <div className="icon">
-                  <img src={chatImage} alt="chatIcon"/>
+                  <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+64.svg"} alt="chatIcon"/>
                 </div>
                 <div className="item-head">
                 Private/Public Chat
@@ -43,7 +43,7 @@ const Features = () => {
             <div className="box">
             <div className="items">
                 <div className="icon">
-                  <img src={breakOut} alt="breakout"/>
+                  <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg"} alt="breakout"/>
                 </div>
                 <div className="item-head">
                 Breakout Rooms
@@ -56,7 +56,7 @@ const Features = () => {
               <div className="box">
             <div className="items">
                 <div className="icon">
-                  <img src={dynamic} alt='dyanmic'/>
+                  <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+71.svg"} alt='dyanmic'/>
                 </div>
                 <div className="item-head">
                    Dynamic Role Change
@@ -69,7 +69,7 @@ const Features = () => {
               <div className="box">
             <div className="items">
                 <div className="icon">
-                  <img src={breakOut} alt="breakout"/>
+                  <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg"} alt="breakout"/>
                 </div>
                 <div className="item-head">
                 Breakout Rooms
@@ -82,7 +82,7 @@ const Features = () => {
               <div className="box" style={{marginBottom:"-170px"}}>
             <div className="items">
                 <div className="icon">
-                  <img src={recording} alt="recording"/>
+                  <img src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+72.svg"} alt="recording"/>
                 </div>
                 <div className="item-head" style={{fontSize:"19px"}}>
                 Recording with Custom Layout

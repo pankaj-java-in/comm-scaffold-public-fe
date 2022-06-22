@@ -27,13 +27,13 @@ const PrivateMeeting = () => {
         </div>
         <div className='private-animate' data-aos="fade-right">
             <div className='private-images'>
-                <img className='ani1' data-aos="fade-right" src={Ani1}/>
-                <img className='ani2' data-aos="fade-down" src={Ani2}/>
-                <img className='ani3' data-aos="fade-up" src={Ani3}/>
+                <img className='ani1' data-aos="fade-right" src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/ani1.svg"}/>
+                <img className='ani2' data-aos="fade-down" src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/ani2.svg"}/>
+                <img className='ani3' data-aos="fade-up" src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/ani3.svg"}/>
                 </div>
         </div>
     </div>
-     <img className='vector-img' src={vectorDown} onClick={() => scrollDown()}/>
+     <img className='vector-img' src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Vector.svg"} onClick={() => scrollDown()}/>
    </div>
   )
 }
