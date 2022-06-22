@@ -19,5 +19,10 @@
                 }
             }
         }
+        .header-btn{
+            @media (max-width: 800px) {
+                margin-left: -20px;
+            }
+        }
     }
 }

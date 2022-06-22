@@ -42,10 +42,10 @@ function ShowFaq() {
     rowContentColor: 'grey',
     // arrowColor: "red",
     rowContentTextSize: '16px',
-    // rowContentPaddingTop: '10px',
+    rowContentPaddingTop: '10px',
     rowContentPaddingBottom: '10px',
-    // rowContentPaddingLeft: '50px',
-    // rowContentPaddingRight: '150px',
+    rowContentPaddingBottom: '30px',
+    rowContentPaddingLeft: '20px'
 };
 const config = {
   animate: true,
@@ -68,7 +68,7 @@ const config = {
       </div>
       <div className="faq">
       <div className="faq-style-wrapper">
-        <Faq data={data} config={config} styles={styles} getRowOptions={setRowsOption} />
+        <Faq className='faq-row-wrapper' data={data} config={config} styles={styles} getRowOptions={setRowsOption} />
       </div>
       </div>
     </div>

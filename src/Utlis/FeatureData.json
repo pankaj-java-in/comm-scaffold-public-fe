@@ -22,5 +22,29 @@
         "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
         "type":"feature"
     
+    },
+    {
+        "item":"4",
+        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg",
+        "head":"Breakout Rooms",
+        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "type":"feature"
+    
+    },
+    {
+        "item":"4",
+        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg",
+        "head":"Breakout Rooms",
+        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "type":"feature"
+    
+    },
+    {
+        "item":"4",
+        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg",
+        "head":"Breakout Rooms",
+        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "type":"feature"
+    
     }
 ]

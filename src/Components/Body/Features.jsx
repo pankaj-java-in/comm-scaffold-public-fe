@@ -3,7 +3,6 @@ import "./Body.scss";
 import AOS from "aos";
 import FeatureTemplate from "./FeatureTemplate";
 import FeatureData from "../../Utlis/FeatureData.json";
-import ICONS from "../../Utlis/Constants/icons";
 
 const Features = () => {
 
@@ -25,21 +24,8 @@ const Features = () => {
             alteration boisterous the attachment.
           </div>
         </div>
-        <div className="rotation" data-aos="fade-left">
+        <div className="rotation" data-aos="fade-up">
           <div className="horizontal-scroll-wrapper squares">
-            <div className="box" style={{marginTop:"310px"}}>
-              <div className="items">
-                <div className="icon">
-                  <img src={ICONS.MESSAGE_ICON} alt="chatIcon"/>
-                </div>
-                <div className="item-head">
-                Private/Public Chat
-                </div> 
-                <div className="item-content">
-                Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.
-                </div>
-              </div>
-            </div>
             {
               FeatureData.map( x => {
                 return (
@@ -52,19 +38,6 @@ const Features = () => {
                 )
               })
             }
-              <div className="box" style={{marginBottom:"-170px"}}>
-            <div className="items">
-                <div className="icon">
-                  <img src={ICONS.RECORDING_ICON} alt="recording"/>
-                </div>
-                <div className="item-head" style={{fontSize:"19px"}}>
-                Recording with Custom Layout
-                </div>
-                <div className="item-content">
-                Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.
-                </div>
-              </div>
-              </div>
           </div>
         </div>
       </div>

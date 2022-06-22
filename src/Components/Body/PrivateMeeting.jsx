@@ -9,14 +9,9 @@ const PrivateMeeting = () => {
     });
   }, []);
 
-  const scrollDown = () => {
-    window.scrollTo({
-      top: 5000,
-      behavior: 'smooth'
-    })
-  }
   return (
     <div className='vector-down'>
+      <div className='com-head'>Communication Scaffold</div>
     <div className='main-private'>
         <div className='private' data-aos="fade-right">
             <div className='p-head'>Private meetings<br/> mean data privacy too!</div>
@@ -30,7 +25,6 @@ const PrivateMeeting = () => {
                 </div>
         </div>
     </div>
-     <img className='vector-img' src={ICONS.DOWN_ARROW} onClick={() => scrollDown()}/>
    </div>
   )
 }
