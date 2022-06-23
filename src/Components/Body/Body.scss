@@ -20,6 +20,23 @@
   --font-m-size18: 1.125rem;
   --font-m-size14: 0.875rem;
   --font-m-size12: 0.75rem;
+
+  /* padding */
+  --padding-main-feature: 45px 0 20px 0; 
+  --padding-help: 80px 360px 20px 50px; 
+  --padding-help-content: 20px 180px 0 0; 
+  --padding-box-square: 30px 20px 40px 20px; 
+  --padding-main-imp: 60px 35px 45px 35px; 
+  --padding-security: 75px 0 0 75px; 
+  --padding-sec-head: 40px 40px 0 0; 
+  --padding-sec-content: 25px 75px 25px 0; 
+  --padding-btn: 49px 50px 0 0; 
+  --padding-benefits: 40px 115px 20px 53px;
+  --padding-benefits-box: 20px 46px 45px 46px; 
+  --padding-ind-head: 15px 20rem 0 20rem; 
+  --padding-ind-button: 15px 0 0 0; 
+  --padding-p-head: 1.875rem 5.938rem 1.25rem 2.063rem; 
+  --padding-p-content: 0 195px 20px 33px;  
 }
 
 @media (min-width:1000px) and (max-width:1367px) {
@@ -36,14 +53,30 @@
   --font-size10: 0.625rem;
  }
 }
+@media (max-width: 800px) {
+  :root{
+  --padding-main-feature: 30px 0 45px 0; 
+  --padding-help: 80px 40px 20px 40px; 
+  --padding-help-content: 20px 0 0 0; 
+  --padding-box-square: 0px 20px 40px 20px; 
+  --padding-main-imp: 60px 55px 45px 35px;
+  --padding-security: 30px 20px 0 20px;
+  --padding-sec-head: 0; 
+  --padding-sec-content: 25px 0; 
+  --padding-btn: 0; 
+  --padding-benefits: 40px 50px 20px 50px;
+  --padding-benefits-box: 20px 0 45px 0; 
+  --padding-ind-head: 0; 
+  --padding-ind-button: 0; 
+  --padding-p-head: 0; 
+  --padding-p-content: 15px 0 0 0; 
 
+  }
+}
 .main-features {
   background: linear-gradient(180deg, #011054 0%, #1344a4 100%);
   height: auto;
-  padding: 45px 0 20px 0;
-  @media (max-width: 800px) {
-    padding: 30px 0 45px 0;
-  }
+  padding: var(--padding-main-feature);
   .features {
     display: flex;
     flex-flow: column;
@@ -131,10 +164,7 @@
   flex-flow: column;
   padding: 0 0 95px 0;
   .help {
-    padding: 80px 360px 20px 50px;
-    @media (max-width: 800px) {
-      padding: 80px 40px 20px 40px;
-    }
+    padding: var(--padding-help);
     .help-head {
       font-family: var(--primary-font);
       font-weight: 800;
@@ -142,24 +172,20 @@
       color: #000000;
     }
     .help-content {
-      padding: 20px 180px 0 0;
+      padding: var(--padding-help-content);
       font-family: var(--primary-font);
       font-weight: 500;
       font-size: var(--font-size18);
       color: #000000;
-      @media (max-width: 800px) {
-        padding: 20px 0 0 0;
-      }
     }
   }
   .box-square {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    padding: 30px 20px 40px 20px;
+    padding: var(--padding-box-square);
     @media (max-width: 800px) {
       flex-flow: column;
-      padding: 0px 20px 40px 20px;
       align-items: center;
     }
   }
@@ -169,11 +195,8 @@
 .main-imp {
   display: flex;
   flex-flow: column;
-  padding: 60px 35px 45px 35px;
+  padding: var(--padding-main-imp);
   background: #f1f5f8;
-  @media (max-width: 380px) {
-    padding: 60px 55px 45px 35px;
-  }
   .imp {
     display: flex;
     flex-flow: column;
@@ -347,19 +370,17 @@
     width: 50%;
     display: flex;
     flex-flow: column;
-    padding: 75px 0 0 75px;
+    padding: var(--padding-security);
     @media (max-width: 800px) {
       width: 90%;
-      padding: 30px 20px 0 20px;
     }
     .sec-head {
       font-family: var(--primary-font);
       font-weight: 800;
       font-size: var(--font-size40);
       color: #000000;
-      padding: 40px 40px 0 0;
+      padding: var(--padding-sec-head);
       @media (max-width: 800px) {
-        padding: 0;
         font-size: 32px;
       }
     }
@@ -368,20 +389,13 @@
       font-weight: 500;
       font-size: var(--font-size18);
       color: #000000;
-      padding: 25px 75px 25px 0;
-      @media (max-width: 800px) {
-        padding: 25px 0;
-        font-size: 16px;
-      }
+      padding: var(--padding-sec-content);
     }
     .sec-button {
       display: flex;
       flex-flow: row;
       .btn {
-        padding: 49px 50px 0 0;
-        @media (max-width: 800px) {
-          padding: 0;
-        }
+        padding: var(--padding-btn);
       }
       .vec {
         @media (max-width: 800px) {
@@ -421,10 +435,9 @@
   .benefits {
     display: flex;
     flex-flow: column;
-    padding: 40px 115px 20px 53px;
+    padding: var(--padding-benefits);
     @media (max-width: 800px) {
       align-items: center;
-      padding: 40px 50px 20px 50px;
     }
     .b-head {
       font-family: var(--primary-font);
@@ -447,11 +460,10 @@
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-    padding: 20px 46px 45px 46px;
+    padding: var(--padding-benefits-box);
     transition-delay: 1s;
     @media (max-width: 800px) {
       flex-flow: column;
-      padding: 20px 0 45px 0;
       align-items: center;
     }
   }
@@ -476,9 +488,8 @@
     font-size: var(--font-size40);
     text-align: center;
     color: #ffffff;
-    padding: 15px 20rem 0 20rem;
+    padding: var(--padding-ind-head);
     @media (max-width: 1240px) {
-      padding: 0;
       font-size: var(--font-size30);
     }
   }
@@ -497,10 +508,7 @@
     }
   }
   .ind-button {
-    padding-top: 15px;
-    @media (max-width: 800px) {
-      padding:0;
-    }
+    padding: var(--padding-ind-button);
   }
 }
 
@@ -636,10 +644,7 @@
         font-weight: 800;
         font-size: var(--font-size30);
         color: #000000;
-        padding: 1.875rem 5.938rem 1.25rem 2.063rem;
-        @media (max-width: 800px) {
-          padding: 0;
-        }
+        padding:var(--padding-p-head);
       }
       .p-content {
         font-family: var(--primary-font);
@@ -647,10 +652,7 @@
         font-size: var(--font-size18);
         letter-spacing: 0.01em;
         color: #000000;
-        padding: 0 195px 20px 33px;
-        @media (max-width: 800px) {
-          padding: 15px 0 0 0;
-        }
+        padding: var(--padding-p-content);
       }
     }
     .private-animate {
