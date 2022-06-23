@@ -2,20 +2,20 @@ import React, { useEffect } from "react";
 import Template from "./Template";
 import BenefitData from "../../Utlis/BenefitData.json";
 import AOS from "aos";
-import LeftCorner from "../../Utlis/Icons/corner1.svg";
-import RightCorner from "../../Utlis/Icons/corner2.svg";
+import ICONS from "../../Utlis/Constants/icons";
 
 const Benefits = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
+      once: true,
     });
   }, []);
   return (
     <div className="main-benefits">
      <div className="block-corner" data-aos="fade-down">
-      <img src={LeftCorner}/>
-      <img src={RightCorner}/>
+      <img src={ICONS.LEFT_CORNER}/>
+      <img src={ICONS.RIGHT_CORNER}/>
      </div>
       <div
         className="benefits"
@@ -31,7 +31,7 @@ const Benefits = () => {
       </div>
       <div
         className="benefits-box"
-        data-aos="fade-right"
+        data-aos="fade-left"
       >
         {BenefitData.map((x) => {
           return (

@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react'
-import Ani1 from "../../Utlis/Icons/ani1.svg";
-import Ani2 from "../../Utlis/Icons/ani2.svg";
-import Ani3 from "../../Utlis/Icons/ani3.svg";
 import AOS from "aos";
+import ICONS from '../../Utlis/Constants/icons';
 
 const PrivateMeeting = () => {
   useEffect(() => {
@@ -10,7 +8,10 @@ const PrivateMeeting = () => {
       duration: 2000,
     });
   }, []);
+
   return (
+    <div className='vector-down'>
+      <div className='com-head'>Communication Scaffold</div>
     <div className='main-private'>
         <div className='private' data-aos="fade-right">
             <div className='p-head'>Private meetings<br/> mean data privacy too!</div>
@@ -18,12 +19,13 @@ const PrivateMeeting = () => {
         </div>
         <div className='private-animate' data-aos="fade-right">
             <div className='private-images'>
-                <img className='ani1' data-aos="fade-right" src={Ani1}/>
-                <img className='ani2' data-aos="fade-down" src={Ani2}/>
-                <img className='ani3' data-aos="fade-up" src={Ani3}/>
+                <img className='ani1' data-aos="fade-right" src={ICONS.ANIMATION_1}/>
+                <img className='ani2' data-aos="fade-down" src={ICONS.ANIMATION_2}/>
+                <img className='ani3' data-aos="fade-up" src={ICONS.ANIMATION_3}/>
                 </div>
         </div>
     </div>
+   </div>
   )
 }
 

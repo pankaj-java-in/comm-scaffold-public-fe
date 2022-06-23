@@ -1,20 +1,21 @@
 .FAQ__question {
-    background: #F1F5F8;
     border: none;
     width: 100%;
     text-align: left;
     font-size: 14px;
-    background-color: #F1F5F8;
+    font-family: 'Manrope';
   }
   
   .FAQ__question:hover {
     text-decoration: underline;
     cursor: pointer;
+    font-family: 'Manrope';
   }
   
   .FAQ__answer--hidden {
     display: none;
     background: #F1F5F8;
+    font-family: 'Manrope';
   }
 
   .main-faq{
@@ -22,7 +23,7 @@
     flex-flow: row;
     min-height: 380px;
     height: auto;
-    padding: 110px 50px 10px 50px;
+    padding: 90px 50px 15px 50px;
     background: #F1F5F8;
     @media (max-width: 800px) {
       flex-flow: column;
@@ -35,34 +36,33 @@
         padding: 0;
     }
       .question{
-        height: 85px;
-        width: 330px;
+        height: 5.313rem;
+        width: 24.1vw;
         font-family: 'Manrope';
-        font-style: normal;
         font-weight: 800;
-        font-size: 45px;
-        line-height: 48px;
+        font-size: 2.5rem;
         color: #000000;
+        @media (max-width: 800px) {
+          width: 330px;
+      }
       }
       .answer{
         padding-top: 35px;
-        height: 74px;
-        width: 450px;
+        height: 7.625rem;
+        width: 32.9vw;
         font-family: 'Manrope';
-        font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 29px;
+        font-size: 1.125rem;
         letter-spacing: 0.01em;
         color: #1B1C31;
         @media (max-width: 800px) {
           height: fit-content;
-          width: 95vw;
+          width: 300px;
       }
       }
     }
     .faq{
-      padding-left: 30px;
+      padding: 0 0 45px 30px;
       width: 50%;
       @media (max-width: 800px) {
         padding-top: 50px;
@@ -71,4 +71,22 @@
     }
     }
   }
+.faq-row-wrapper {
+    .faq-body {
+        .faq-row {
+            .row-title {
+              font-family: 'Manrope';
+              font-size: 1.125rem;
+              font-weight: 400;
+            }
+
+            .row-content {
+                .row-content-text {
+                  font-family: 'Manrope';
+                  font-size: 1.125rem;
+                }
+            }
+        }
+    }
+}
   

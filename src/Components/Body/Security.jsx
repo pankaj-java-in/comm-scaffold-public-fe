@@ -1,14 +1,14 @@
 import React, {useEffect} from "react";
-import secImg from "../../Utlis/Icons/image 69.svg";
-import Vector from "../../Utlis/Icons/Vector 7.svg";
 import Button from "../Button/Button";
 import AOS from "aos";
+import ICONS from "../../Utlis/Constants/icons";
 
 const Security = () => {
 
   useEffect(() => {
     AOS.init({
       duration: 2000,
+      once: true,
     });
   }, []);
 
@@ -19,11 +19,11 @@ const Security = () => {
             <div className="sec-content">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</div>
             <div className="sec-button">
            <div className="btn"><Button/></div>
-           <img className="vec" src={Vector}/>
+           <img className="vec" src={ICONS.VECTOR}/>
             </div>
           </div>
           <div className="security-img" data-aos="fade-right">
-            <img className="sec-img" src={secImg} alt="security"/>
+            <img className="sec-img" src={ICONS.SECURITY} alt="security"/>
           </div>
         </div>
     )

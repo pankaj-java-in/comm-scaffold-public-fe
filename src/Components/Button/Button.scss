@@ -3,12 +3,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 12.4vw;
     height: 29.54px;
     background: #E1593E;
     gap: 8px;
     border-radius: 8px;
     padding: 8px 12px 8px 15px;
+    cursor: pointer;
+    @media (min-width: 1380px) {
+        max-width: 475px;
+    }
     .content{
         color: white;
     }
@@ -16,10 +20,10 @@
         color: white;
     }
     @media (max-width: 800px) {
-        // width: 35vw;
+        width: 120px;
         // margin-left: -40px;
     }
 }
 .req-btn{
-    width: 29.2vw;
+    width: 27.5vw;
 }
