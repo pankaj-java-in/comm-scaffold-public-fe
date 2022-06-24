@@ -24,6 +24,9 @@ const PrivateMeeting = () => {
                 <img className='ani3' data-aos="fade-up" src={ICONS.ANIMATION_3}/>
                 </div>
         </div>
+        <div className='private-responsive-box' data-aos="fade-left">
+          <img className='responsive-img' src={"https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/8f3edbee-7f1e-4bdf-ae08-17657cf22c56_Property_1_Frame_64_1-removebg-preview.png"}/>
+        </div>
     </div>
    </div>
   )

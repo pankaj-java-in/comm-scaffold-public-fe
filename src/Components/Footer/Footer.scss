@@ -1,16 +1,19 @@
 .main-footer{
     .footer{
-        height: 68.26px;
+        height: 4rem;
         background: rgba(1, 15, 84, 0.9);
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: 800px) {
+            height: 3rem;
+            padding: 0 15px;
+            }
         .content{
             color: white;font-family: 'Manrope';
             font-style: normal;
             font-weight: 400;
             font-size: 1rem;
-            line-height: 22px;
         }
     }
 }
