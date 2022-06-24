@@ -34,8 +34,8 @@ $scrollBarHeight: 1px;
 
   /* padding */
   --padding-main-feature: 45px 0 20px 0; 
-  --padding-help: 80px 360px 20px 50px; 
-  --padding-help-content: 20px 180px 0 0; 
+  --padding-help: 80px 22.5rem 20px 50px; 
+  --padding-help-content: 20px 11.25rem 0 0; 
   --padding-box-square: 30px 20px 40px 20px; 
   --padding-main-imp: 60px 35px 45px 35px; 
   --padding-security: 75px 0 0 75px; 
@@ -74,8 +74,6 @@ $scrollBarHeight: 1px;
 
   /*Height*/
   --height-main-industry: 16.438rem;
-  --height-box-square-head: 3.8vh;
-  --height-box-square-content: 8.8vh;
 
 }
 
@@ -136,8 +134,6 @@ $scrollBarHeight: 1px;
 
   /*Height*/
   --height-main-industry: 100%;
-  --height-box-square-head: 22px;
-  --height-box-square-content: 60px;
 
   }
 }
@@ -246,7 +242,7 @@ $scrollBarHeight: 1px;
 .main-help {
   display: flex;
   flex-flow: column;
-  padding: 0 0 95px 0;
+  padding: 0 0 70px 0;
   .help {
     padding: var(--padding-help);
     .help-head {
@@ -621,7 +617,6 @@ $scrollBarHeight: 1px;
     margin-top: 13px;
   }
   .box-square-head {
-    height: var(--height-box-square-head);
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: var(--font-size20);
@@ -630,7 +625,6 @@ $scrollBarHeight: 1px;
     padding: 20px 0;
   }
   .box-square-content {
-    height: var(--height-box-square-content);
     width: var(--width-box-square-content);
     font-family: var(--primary-font);
     font-weight: 400;
@@ -640,7 +634,7 @@ $scrollBarHeight: 1px;
   }
   .box-square-img {
     width: var(--width-box-square-img);
-    padding-top: 30px;
+    padding-top: 25px;
   }
 }
 

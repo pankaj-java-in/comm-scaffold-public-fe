@@ -60,7 +60,7 @@ const config = {
     <div className="main-faq">
       <div className="content">
        <div className="question">
-       Any questions? We got you.
+       Any questions?<br/> We got you.
        </div>
        <div className="answer">
        Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.
