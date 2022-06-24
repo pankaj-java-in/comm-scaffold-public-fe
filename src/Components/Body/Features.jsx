@@ -24,7 +24,7 @@ const Features = () => {
             alteration boisterous the attachment.
           </div>
         </div>
-        <div className="rotation" data-aos="fade-up">
+        <div className="rotation" data-aos="fade-left">
           <div className="horizontal-scroll-wrapper squares">
             {
               FeatureData.map( x => {

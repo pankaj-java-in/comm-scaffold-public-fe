@@ -7,6 +7,9 @@
     right: 0;
     position: fixed;
     z-index: 1111;
+    @media (max-width: 800px) {
+    padding: 12px 15px 12px 20px;
+    }
     .header{
         display: flex;
         justify-content: space-between;
@@ -17,11 +20,6 @@
                 @media (max-width: 800px) {
                     width: 50vw;
                 }
-            }
-        }
-        .header-btn{
-            @media (max-width: 800px) {
-                margin-left: -20px;
             }
         }
     }

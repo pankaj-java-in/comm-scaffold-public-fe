@@ -50,6 +50,9 @@ $scrollBarHeight: 1px;
   --padding-p-head: 1.875rem 5.938rem 1.25rem 2.063rem; 
   --padding-p-content: 0 195px 20px 33px;  
   --padding-imp: 0 246px;
+  --padding-main-industry: 0;
+  --padding-main-private: 9rem 1.25rem 2.5rem 1.25rem;
+  --padding-main-demo: 60px 0 60px 60px;
 
   /*Width*/
   
@@ -70,7 +73,6 @@ $scrollBarHeight: 1px;
   --align-j-item: none;
 
   /*Height*/
-  --height-sec-img: 50.7vh;
   --height-main-industry: 16.438rem;
   --height-box-square-head: 3.8vh;
   --height-box-square-content: 8.8vh;
@@ -111,12 +113,15 @@ $scrollBarHeight: 1px;
   --padding-p-head: 0; 
   --padding-p-content: 15px 0 0 0; 
   --padding-imp: 0;
+  --padding-main-industry: 30px 20px;
+  --padding-main-private: 8rem 1.25rem 0 1.25rem;
+  --padding-main-demo: 60px 0 60px 40px;
 
   /*Width*/
   --width-imp-box-content:300px;
   --width-benefit-temp:80vw;
   --width-security:90%;
-  --width-sec-img: 300px;
+  --width-sec-img: 22rem;
   --width-single-box-temp: 250px;
   --width-box-square-content: 245px;
   --width-box-square-img: 249px;
@@ -130,7 +135,6 @@ $scrollBarHeight: 1px;
   --align-j-item: justify;
 
   /*Height*/
-  --height-sec-img: 200px;
   --height-main-industry: 100%;
   --height-box-square-head: 22px;
   --height-box-square-content: 60px;
@@ -464,10 +468,11 @@ $scrollBarHeight: 1px;
   }
   .security-img {
     padding: 30px 50px 0 0;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .sec-img {
       width: var(--width-sec-img);
-      height: var(--height-sec-img);
     }
   }
 }
@@ -508,7 +513,6 @@ $scrollBarHeight: 1px;
     flex-flow: var(--flex-r-flow);
     justify-content: space-around;
     padding: var(--padding-benefits-box);
-    transition-delay: 1s;
     align-items: var(--align-item);
   }
 }
@@ -516,6 +520,7 @@ $scrollBarHeight: 1px;
 // Industry
 
 .main-industry {
+  padding: var(--padding-main-industry);
   height: var(--height-main-industry);
   display: flex;
   flex-flow: column;
@@ -552,9 +557,10 @@ $scrollBarHeight: 1px;
 .main-demo {
   background: url("https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/fc1c06ed-3dec-4079-b879-592a3747becc_Frame 81 (1).png"),
     #010f54;
-  padding: 60px 0 60px 60px;
+  padding: var(--padding-main-demo);
   .demo-box {
-    width: 34.6vw;
+    width: 33vw;
+    min-width: 200px;
     display: flex;
     flex-flow: column;
     background: url("https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/93d14dee-c741-4129-874e-bf012f0bc092_Group 1000000796.png");
@@ -588,6 +594,7 @@ $scrollBarHeight: 1px;
       border-radius: 4px;
       margin-top: 10px;
       width: 28vw;
+      min-width: 10rem;
       @media (min-width: 1380px) {
         max-width: 450px;
       }
@@ -648,7 +655,7 @@ $scrollBarHeight: 1px;
   .main-private {
     display: flex;
     flex-flow: var(--flex-r-flow);
-    padding: 9rem 1.25rem 2.5rem 1.25rem;
+    padding: var(--padding-main-private);
     justify-content: space-between;
     .private {
       width: var(--width-private);
@@ -708,9 +715,20 @@ $scrollBarHeight: 1px;
     font-size: var(--font-size40);
     color: #000000;
     @media (max-width: 800px) {
-      top: 7rem;
+      top: 5rem;
       left: 1.3rem;
       width: 22rem;
+    }
+  }
+}
+.private-responsive-box{
+  display: none;
+  @media (max-width: 800px) {
+    padding-top: 20px;
+    display: block;
+    margin-left: -15px;
+    .responsive-img{
+      width: 21rem;
     }
   }
 }
