@@ -52,11 +52,12 @@ $scrollBarHeight: 1px;
   --padding-imp: 0 246px;
   --padding-main-industry: 0;
   --padding-main-private: 9rem 1.25rem 2.5rem 1.25rem;
-  --padding-main-demo: 60px 0 60px 60px;
+  --padding-main-demo: 75px 150px;
+  --padding-content: 0 100px;
 
   /*Width*/
   
-  --width-imp-box-content:23vw;
+  --width-imp-box-content:21vw;
   --width-benefit-temp:22vw;
   --width-security:50%;
   --width-sec-img: 46.12vw;
@@ -64,6 +65,7 @@ $scrollBarHeight: 1px;
   --width-box-square-content: 17.9vw;
   --width-box-square-img: 18.2vw;
   --width-private: 50%;
+  --width-demo-input: 34.2vw;
 
    /*flex-flow*/
    --flex-r-flow: row; 
@@ -113,7 +115,8 @@ $scrollBarHeight: 1px;
   --padding-imp: 0;
   --padding-main-industry: 30px 20px;
   --padding-main-private: 8rem 1.25rem 0 1.25rem;
-  --padding-main-demo: 60px 0 60px 40px;
+  --padding-main-demo: 30px 30px;
+  --padding-content: 0 40px;
 
   /*Width*/
   --width-imp-box-content:300px;
@@ -124,6 +127,7 @@ $scrollBarHeight: 1px;
   --width-box-square-content: 245px;
   --width-box-square-img: 249px;
   --width-private: 100%;
+  --width-demo-input: none;
   
   /*flex-flow*/
   --flex-r-flow: column; 
@@ -152,6 +156,12 @@ $scrollBarHeight: 1px;
   }
 }
 
+@media (min-width:1401px){
+  :root {
+  --width-demo-input: 35.7vw; 
+  }
+}
+
 
 .main-features {
   background: linear-gradient(180deg, #011054 0%, #1344a4 100%);
@@ -165,6 +175,7 @@ $scrollBarHeight: 1px;
       flex-flow: column;
       align-items: center;
       justify-content: center;
+      padding: var(--padding-content);
       .head {
         color: white;
         text-align: center;
@@ -198,8 +209,8 @@ $scrollBarHeight: 1px;
           background: #ffffff;
           box-shadow: 0px 16px 54px rgba(0, 0, 0, 0.08);
           border-radius: 10px;
-          height: 10rem;
-          width: 17.7rem;
+          height: 10.5rem;
+          width: 18.7rem;
           margin: 2rem 2rem;
         }
         .box {
@@ -316,27 +327,23 @@ $scrollBarHeight: 1px;
         flex-flow: column;
         justify-items: center;
         align-items: center;
-        .big-circle {
-          height: 138.5px;
-          width: 138.5px;
-          background: #c4c4c4;
-          border-radius: 50%;
-        }
-        .small-circle {
-          height: 40px;
-          width: 40px;
-          border-radius: 50%;
-          margin-top: -26px;
-          background: #e1593e;
-          border: 2px solid #ffffff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #ffffff;
-          font-family: var(--primary-font);
-          font-weight: 700;
-          font-size: var(--font-size16);
-        }
+        filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.06));
+      }
+      .small-circle {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-top: -32px;
+        z-index: 100;
+        background: #e1593e;
+        border: 2px solid #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-family: var(--primary-font);
+        font-weight: 700;
+        font-size: var(--font-size16);
       }
       .imp-box-head {
         text-align: center;
@@ -555,16 +562,11 @@ $scrollBarHeight: 1px;
     #010f54;
   padding: var(--padding-main-demo);
   .demo-box {
-    width: 33vw;
-    min-width: 200px;
     display: flex;
     flex-flow: column;
-    background: url("https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/93d14dee-c741-4129-874e-bf012f0bc092_Group 1000000796.png");
+    background: url("https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/form+section+backgrounfd.svg");
     border-radius: 15px;
-    padding: 44px 39px 50px 55px;
-    @media (min-width: 1380px) {
-      max-width: 500px;
-    }
+    padding: 44px;
     .demo-head {
       font-family: var(--primary-font);
       font-weight: 700;
@@ -583,27 +585,34 @@ $scrollBarHeight: 1px;
         font-size: var(--font-size24);
       }
     }
+    .demo-span{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: var(--flex-r-flow);
+    }
     .demo-input {
       padding: 10px;
+      margin-top: 20px;
       background: #fafafa;
       border: 1px solid #e0e0e0;
       border-radius: 4px;
-      margin-top: 10px;
-      width: 28vw;
-      min-width: 10rem;
-      @media (min-width: 1380px) {
-        max-width: 450px;
-      }
+      width: var(--width-demo-input);
+      height: 2.5rem;
     }
     .valid-email{
-      padding-top: 10px;
-      width: 13vw;
       font-size: 14px;
       font-family: var(--primary-font);
       color: red;
     }
+    .demo-messsage{
+      margin-top: 20px;
+      border-radius: 4px;
+      padding: 15px 10px;
+    }
     .demo-button {
       padding-top: 20px;
+      display: flex;
+      flex-flow: row-reverse;
     }
   }
 }
@@ -631,6 +640,7 @@ $scrollBarHeight: 1px;
     font-size: var(--font-size16);
     color: #000000;
     text-align: left;
+    height: 12vh;
   }
   .box-square-img {
     width: var(--width-box-square-img);

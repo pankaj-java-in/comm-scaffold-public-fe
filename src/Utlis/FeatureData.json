@@ -1,50 +1,51 @@
 [
     {
-        "item":"2",
+        "item":"1",
         "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg",
         "head":"Breakout Rooms",
-        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "content":"Create breakout rooms for a quick private word in between meetings",
+        "type":"feature"
+    
+    },
+    {
+        "item":"2",
+        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+71.svg",
+        "head":"Dynamic Role Change",
+        "content":"Change hosts in between meetings to allow for multiple points to be addressed within the same meeting",
         "type":"feature"
     
     },
     {
         "item":"3",
-        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+71.svg",
-        "head":"Dynamic Role Change",
-        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+72.svg",
+        "head":"Recording with custom layouts",
+        "content":"Record entire meetings with custom layouts to ensure the desired clarity",
         "type":"feature"
     
     },
     {
         "item":"4",
         "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg",
-        "head":"Breakout Rooms",
-        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "head":"Fully customizable UI",
+        "content":"Tweak and change the UI based on your needs for complete meeting optimization",
         "type":"feature"
     
     },
     {
-        "item":"4",
+        "item":"5",
         "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg",
-        "head":"Breakout Rooms",
-        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "head":"Real time webhooks",
+        "content":"Share the data as events as it happens so that you don’t miss out on anything",
         "type":"feature"
     
     },
     {
-        "item":"4",
+        "item":"6",
         "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg",
-        "head":"Breakout Rooms",
-        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
-        "type":"feature"
-    
-    },
-    {
-        "item":"4",
-        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg",
-        "head":"Breakout Rooms",
-        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "head":"HD Screenshare",
+        "content":"Share your screen in full HD for better communication",
         "type":"feature"
     
     }
 ]
+  

@@ -16,7 +16,7 @@ const Security = () => {
         <div className="main-security">
           <div className="security" data-aos="fade-right">
             <div className="sec-head">Your Data, Your Choice</div>
-            <div className="sec-content">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</div>
+            <div className="sec-content">With Communication Scaffold, enjoy a video conferencing experience like no other. With cross platform functionality and no data sharing, be in complete control of your meetings. </div>
             <div className="sec-button">
            <div className="btn"><Button/></div>
            <img className="vec" src={ICONS.VECTOR}/>

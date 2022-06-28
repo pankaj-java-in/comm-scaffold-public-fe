@@ -53,7 +53,7 @@ const Button = (props) => {
             Request a Demo 
             </div>
             {/* <div className='arrow'>
-            {type === "request" ? "" : "->"}
+            {type === "request" ? "" : <img src="https://prod-cs-attachment.s3.ap-south-1.amazonaws.com/b4e7779a-4a32-4688-8099-db6bf4e0fdfc_Vector.svg"/>}
             </div> */}
         </div>
     )
