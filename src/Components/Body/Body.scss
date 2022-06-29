@@ -258,7 +258,7 @@ $scrollBarHeight: 1px;
     padding: var(--padding-help);
     .help-head {
       font-family: var(--primary-font);
-      font-weight: 800;
+      font-weight: 700;
       font-size: var(--font-size40);
       color: #000000;
     }
@@ -293,7 +293,7 @@ $scrollBarHeight: 1px;
     padding: var(--padding-imp);
     .imp-head {
       font-family: var(--primary-font);
-      font-weight: 800;
+      font-weight: 700;
       font-size: var(--font-size40);
       text-align: center;
       color: #000000;
@@ -441,7 +441,7 @@ $scrollBarHeight: 1px;
     padding: var(--padding-security);
     .sec-head {
       font-family: var(--primary-font);
-      font-weight: 800;
+      font-weight: 700;
       font-size: var(--font-size40);
       color: #000000;
       padding: var(--padding-sec-head);
@@ -498,7 +498,7 @@ $scrollBarHeight: 1px;
     align-items: var(--align-item);
     .b-head {
       font-family: var(--primary-font);
-      font-weight: 800;
+      font-weight: 700;
       font-size: var(--font-size40);
       color: #000000;
     }
@@ -533,7 +533,7 @@ $scrollBarHeight: 1px;
     #011054;
   .ind-head {
     font-family: var(--primary-font);
-    font-weight: 800;
+    font-weight: 700;
     font-size: var(--font-size40);
     text-align: center;
     color: #ffffff;
@@ -564,7 +564,7 @@ $scrollBarHeight: 1px;
   .demo-box {
     display: flex;
     flex-flow: column;
-    background: url("https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/form+section+backgrounfd.svg");
+    background: url("https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/form+section+backgrounfd+(2).svg");
     border-radius: 15px;
     padding: 44px;
     .demo-head {
@@ -576,7 +576,7 @@ $scrollBarHeight: 1px;
     }
     .demo-content {
       font-family: var(--primary-font);
-      font-weight: 800;
+      font-weight: 700;
       font-size: var(--font-size30);
       letter-spacing: -0.03em;
       color: #ffffff;
@@ -666,7 +666,7 @@ $scrollBarHeight: 1px;
       padding-top: 4.125rem;
       .p-head {
         font-family: var(--primary-font);
-        font-weight: 800;
+        font-weight: 700;
         font-size: var(--font-size30);
         color: #000000;
         padding:var(--padding-p-head);
@@ -715,7 +715,7 @@ $scrollBarHeight: 1px;
     top: 10rem;
     left: 3.3rem;
     font-family: var(--primary-font);
-    font-weight: 800;
+    font-weight: 700;
     font-size: var(--font-size40);
     color: #000000;
     @media (max-width: 800px) {

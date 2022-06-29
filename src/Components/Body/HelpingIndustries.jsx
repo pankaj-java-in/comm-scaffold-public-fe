@@ -6,7 +6,7 @@ const HelpingIndustries = () => {
   return (
     <div className="main-help">
       <div className="help">
-        <div className="help-head">INDUSTRIES MOST BENEFITED BY US</div>
+        <div className="help-head">Industries Most Benefited By Us</div>
         <div className="help-content">
         In case you belong to any of the following industries then Communication Scaffold is just the tool for you 
         </div>
