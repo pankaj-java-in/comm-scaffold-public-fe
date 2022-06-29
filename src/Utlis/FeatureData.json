@@ -25,7 +25,7 @@
     },
     {
         "item":"4",
-        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg",
+        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/fully+customizable+UI.svg",
         "head":"Fully customizable UI",
         "content":"Tweak and change the UI based on your needs for complete meeting optimization",
         "type":"feature"
@@ -33,7 +33,7 @@
     },
     {
         "item":"5",
-        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg",
+        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Real-time+Webhooks.svg",
         "head":"Real time webhooks",
         "content":"Share the data as events as it happens so that you don’t miss out on anything",
         "type":"feature"
@@ -41,7 +41,7 @@
     },
     {
         "item":"6",
-        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/image+70.svg",
+        "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/HD+SCREENSHARE.svg",
         "head":"HD Screenshare",
         "content":"Share your screen in full HD for better communication",
         "type":"feature"
