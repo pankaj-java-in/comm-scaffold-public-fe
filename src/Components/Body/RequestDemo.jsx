@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Button from "../Button/Button";
+import { MultiSelect } from 'primereact/multiselect';
+
 
 const RequestDemo = () => {
   const [userDetail, setUserDeatail] = useState({
@@ -15,11 +17,20 @@ const RequestDemo = () => {
     });
   };
 
+  const cities = [
+    {name: 'New York', code: 'NY'},
+    {name: 'Rome', code: 'RM'},
+    {name: 'London', code: 'LDN'},
+    {name: 'Istanbul', code: 'IST'},
+    {name: 'Paris', code: 'PRS'}
+];
+
   return (
     <div className="main-demo" id="req-d">
       <div className="demo-box">
         <div className="demo-head">Join with our Community</div>
         <div className="demo-content">Request A Free Demo Now!</div>
+        <span className="demo-span">
         <input
           className="demo-input"
           name="name"
@@ -30,12 +41,42 @@ const RequestDemo = () => {
         <input
           className="demo-input"
           name="email"
-          placeholder="Email"
+          placeholder="Working Email"
           type="email"
           onChange={details}
           value={userDetail.email}
         />
         {!validEmail && <div className="valid-email" >Enter a valid Email</div>}
+        </span>
+        <span className="demo-span">
+        <input
+          className="demo-input"
+          name="phone"
+          placeholder="Phone Number"
+          type="number"
+          onChange={details}
+          value={userDetail.phone}
+        />
+        <MultiSelect
+         name="select"
+         placeholder="Select your Industry" 
+         value={userDetail.select} 
+         onChange={details} 
+         optionLabel="name" 
+         className="demo-input"
+         options={cities} 
+         style={{padding:"0px"}}
+         />
+         </span>
+        <textarea
+          name="message"
+          value={userDetail.message}
+          onChange={details}
+          className="demo-messsage"
+          cols="30"
+          rows="3"
+          placeholder="Enter Your Query"
+        ></textarea>
         <div className="demo-button">
           <Button
             type={"request"}

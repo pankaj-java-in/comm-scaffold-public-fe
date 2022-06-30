@@ -6,7 +6,7 @@ import Features from "../Body/Features";
 import ShowFaq from "../FAQ/ShowFaq";
 import HelpingIndustries from "../Body/HelpingIndustries";
 import Implementation from "../Body/Implementation";
-import Advantage from "../Body/Advantange";
+// import Advantage from "../Body/Advantange";
 import Security from "../Body/Security";
 import Benefits from "../Body/Benefits";
 import Industry from "../Body/Industry";
@@ -26,7 +26,7 @@ const Layout = () => {
         <HelpingIndustries/>
         <ShowFaq/>
         <RequestDemo/>
-        <Advantage/>
+        {/* <Advantage/> */}
         <Footer/>
     </div>
   );

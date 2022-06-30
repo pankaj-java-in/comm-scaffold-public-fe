@@ -1,7 +1,7 @@
 .main-footer{
     .footer{
         height: 4rem;
-        background: rgba(1, 15, 84, 0.9);
+        // background: rgba(1, 15, 84, 0.9);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -10,7 +10,8 @@
             padding: 0 15px;
             }
         .content{
-            color: white;font-family: 'Manrope';
+            color: #010F54;
+            font-family: 'Manrope';
             font-style: normal;
             font-weight: 400;
             font-size: 1rem;

@@ -3,7 +3,7 @@
         "item":"1",
         "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Doc.svg",
         "head":"Telehealth",
-        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "content":"With the Communication Scaffold, patients and doctors can now communicate effortlessly from all over the world.",
         "type":"helping"
     
     },
@@ -11,7 +11,7 @@
         "item":"2",
         "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Lap+(1).svg",
         "head":"Recruitment",
-        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "content":" Can’t hold walk-in interviews? With this, you won’t have to as all recruitment and interviews can be held online. ",
         "type":"helping"
     
     },
@@ -19,7 +19,7 @@
         "item":"3",
         "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Human.svg",
         "head":"e-Learning",
-        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "content":" Learning has been going online since 2020. With our tool, you can further enhance your e-learning experience.",
         "type":"helping"
     
     },
@@ -27,7 +27,7 @@
         "item":"4",
         "icon":"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/public/Lap+(1).svg",
         "head":"Infomation Technologies",
-        "content":"Quickly add drop-in 1-1 call with lobby, waiting room, routing. Privacy compliant.",
+        "content":" IT services and industry as a whole have been needing tools to facilitate operations such as WFH. With our technology, they can now do this with ease.",
         "type":"helping"
     
     }

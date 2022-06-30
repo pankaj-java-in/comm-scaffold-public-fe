@@ -6,11 +6,9 @@ const HelpingIndustries = () => {
   return (
     <div className="main-help">
       <div className="help">
-        <div className="help-head">Helping Industries With Our Solution</div>
+        <div className="help-head">Industries Most Benefited By Us</div>
         <div className="help-content">
-          Yet bed any for travelling assistance indulgence unpleasing. Not
-          thoughts all exercise blessing. Indulgence way everything joy
-          alteration boisterous the attachment.
+        In case you belong to any of the following industries then Communication Scaffold is just the tool for you 
         </div>
       </div>
       <div className="box-square">
