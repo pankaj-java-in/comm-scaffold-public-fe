@@ -17,12 +17,11 @@ const RequestDemo = () => {
     });
   };
 
-  const cities = [
-    {name: 'New York', code: 'NY'},
-    {name: 'Rome', code: 'RM'},
-    {name: 'London', code: 'LDN'},
-    {name: 'Istanbul', code: 'IST'},
-    {name: 'Paris', code: 'PRS'}
+  const industries = [
+    {name: 'Telehealth', code: 'TH'},
+    {name: 'Recruitment', code: 'RT'},
+    {name: 'e-Learning', code: 'EL'},
+    {name: 'Infomation Technologies', code: 'IT'}
 ];
 
   return (
@@ -64,7 +63,7 @@ const RequestDemo = () => {
          onChange={details} 
          optionLabel="name" 
          className="demo-input"
-         options={cities} 
+         options={industries} 
          style={{padding:"0px"}}
          />
          </span>

@@ -33,14 +33,14 @@ const Benefits = () => {
         className="benefits-box"
         data-aos="fade-left"
       >
-        {BenefitData.map((x) => {
+        {BenefitData.map(item => {
           return (
             <Template
-              key={x.item}
-              image={x.icon}
-              head={x.head}
-              content={x.content}
-              type={x.type}
+              key={item.item}
+              image={item.icon}
+              head={item.head}
+              content={item.content}
+              type={item.type}
             />
           );
         })}

@@ -51,14 +51,14 @@ $scrollBarHeight: 1px;
   --padding-p-content: 0 195px 20px 33px;  
   --padding-imp: 0 246px;
   --padding-main-industry: 0;
-  --padding-main-private: 9rem 1.25rem 2.5rem 1.25rem;
+  --padding-main-private: 9rem 1.25rem 0 1.25rem;
   --padding-main-demo: 75px 150px;
   --padding-content: 0 100px;
 
   /*Width*/
   
   --width-imp-box-content:21vw;
-  --width-benefit-temp:22vw;
+  --width-benefit-temp:17.5rem;
   --width-security:50%;
   --width-sec-img: 46.12vw;
   --width-single-box-temp: 18.3vw;
@@ -486,6 +486,7 @@ $scrollBarHeight: 1px;
   display: flex;
   flex-flow: column;
   padding: 0 0 30px 0;
+  overflow: hidden;
   .block-corner {
     display: flex;
     flex-flow: row;
@@ -593,6 +594,7 @@ $scrollBarHeight: 1px;
     .demo-input {
       padding: 10px;
       margin-top: 20px;
+      font-family: var(--primary-font);
       background: #fafafa;
       border: 1px solid #e0e0e0;
       border-radius: 4px;
@@ -608,6 +610,7 @@ $scrollBarHeight: 1px;
       margin-top: 20px;
       border-radius: 4px;
       padding: 15px 10px;
+      font-family: var(--primary-font);
     }
     .demo-button {
       padding-top: 20px;
@@ -663,7 +666,7 @@ $scrollBarHeight: 1px;
     justify-content: space-between;
     .private {
       width: var(--width-private);
-      padding-top: 4.125rem;
+      padding-top: 5.125rem;
       .p-head {
         font-family: var(--primary-font);
         font-weight: 700;

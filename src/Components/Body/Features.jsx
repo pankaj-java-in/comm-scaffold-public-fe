@@ -18,22 +18,22 @@ const Features = () => {
       <div className="features">
         <div className="content" data-aos="fade-down">
           <div className="head">Features</div>
-          <div className="about">
+          {/* <div className="about">
             Yet bed any for travelling assistance indulgence unpleasing. Not
             thoughts all exercise blessing. Indulgence way everything joy
             alteration boisterous the attachment.
-          </div>
+          </div> */}
         </div>
         <div className="rotation" data-aos="fade-left">
           <div className="horizontal-scroll-wrapper squares">
             {
-              FeatureData.map( x => {
+              FeatureData.map( item => {
                 return (
                   <FeatureTemplate
-                  key={x.item}
-                  image={x.icon}
-                  head={x.head}
-                  content={x.content}
+                  key={item.item}
+                  image={item.icon}
+                  head={item.head}
+                  content={item.content}
                   />
                 )
               })

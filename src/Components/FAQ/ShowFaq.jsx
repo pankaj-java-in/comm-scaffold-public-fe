@@ -62,9 +62,9 @@ const config = {
        <div className="question">
        Any questions?<br/> We got you.
        </div>
-       <div className="answer">
+       {/* <div className="answer">
        Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.
-       </div>
+       </div> */}
       </div>
       <div className="faq">
       <div className="faq-style-wrapper">
