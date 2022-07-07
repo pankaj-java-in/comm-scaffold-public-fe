@@ -23,9 +23,6 @@ const Benefits = () => {
       >
         <div className="b-head">Benefits</div>
         <div className="b-content">
-        With our plug and play infrastructure, Communication Scaffold is an easy to integrate and manage reusable code that can be added to any existing ENTERPRISE SOFTWARE SYSTEM and give it video conferencing capabilities.
-        <br/>
-        <br/>
         With the Communication Scaffold, transform any existing Enterprise Software System into something with video conferencing capabilities. And with our plug and play architecture, you get this added capability without any compromises to your data privacy. 
         </div>
       </div>

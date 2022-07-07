@@ -21,7 +21,8 @@ const RequestDemo = () => {
     {name: 'Telehealth', code: 'TH'},
     {name: 'Recruitment', code: 'RT'},
     {name: 'e-Learning', code: 'EL'},
-    {name: 'Infomation Technologies', code: 'IT'}
+    {name: 'Infomation Technologies', code: 'IT'},
+    {name: 'Others', code: 'OT'}
 ];
 
   return (
@@ -40,7 +41,7 @@ const RequestDemo = () => {
         <input
           className="demo-input"
           name="email"
-          placeholder="Working Email"
+          placeholder="Work Email"
           type="email"
           onChange={details}
           value={userDetail.email}
@@ -52,7 +53,7 @@ const RequestDemo = () => {
           className="demo-input"
           name="phone"
           placeholder="Phone Number"
-          type="number"
+          type="text"
           onChange={details}
           value={userDetail.phone}
         />
@@ -60,11 +61,11 @@ const RequestDemo = () => {
          name="select"
          placeholder="Select your Industry" 
          value={userDetail.select} 
-         onChange={details} 
-         optionLabel="name" 
+         onChange={details}
+         optionLabel="name"
          className="demo-input"
-         options={industries} 
-         style={{padding:"0px"}}
+         options={industries}
+         style={{padding:"0px", fontSize:"0.9rem"}}
          />
          </span>
         <textarea

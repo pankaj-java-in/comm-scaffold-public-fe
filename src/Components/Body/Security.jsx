@@ -23,7 +23,9 @@ const Security = () => {
             </div>
           </div>
           <div className="security-img" data-aos="fade-left">
-            <img className="sec-img" src={ICONS.SECURITY} alt="security"/>
+            <video className="sec-img" loop="true" alt="security" autoPlay="true" muted preload="auto" controls>
+            <source src={"https://stage-cs-attachment.s3.ap-south-1.amazonaws.com/ae483ff7-2e74-45f5-a15e-4defed2fbee9_Comm_Scaffold.mp4"} type="video/mp4"/>
+              </video>
           </div>
         </div>
     )
