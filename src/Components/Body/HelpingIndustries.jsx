@@ -12,13 +12,13 @@ const HelpingIndustries = () => {
         </div>
       </div>
       <div className="box-square">
-        {HelpingData.map((x) => {
+        {HelpingData.map(item => {
           return (
             <HelpingTemplate
-              key={x.item}
-              head={x.head}
-              content={x.content}
-              image={x.icon}
+              key={item.item}
+              head={item.head}
+              content={item.content}
+              image={item.icon}
             />
           );
         })}
